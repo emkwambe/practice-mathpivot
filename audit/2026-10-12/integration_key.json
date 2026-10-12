@@ -1,0 +1,170 @@
+[
+  {
+    "n": 1,
+    "subject": "integration",
+    "technique": "basic",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "\\frac{x^3}{3} + \\frac{3x^2}{2} + C"
+  },
+  {
+    "n": 2,
+    "subject": "integration",
+    "technique": "basic",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "\\frac{2x^{3/2}}{3} + C"
+  },
+  {
+    "n": 3,
+    "subject": "integration",
+    "technique": "basic",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "\\frac{x^3}{3} - x + C"
+  },
+  {
+    "n": 4,
+    "subject": "integration",
+    "technique": "u-substitution",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "\\frac{1}{2}e^{x^2} + C"
+  },
+  {
+    "n": 5,
+    "subject": "integration",
+    "technique": "u-substitution",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "\\frac{(\\ln x)^2}{2} + C"
+  },
+  {
+    "n": 6,
+    "subject": "integration",
+    "technique": "u-substitution",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "-\\sqrt{1 - x^2} + C"
+  },
+  {
+    "n": 7,
+    "subject": "integration",
+    "technique": "parts",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "-x \\cos x + \\sin x + C"
+  },
+  {
+    "n": 8,
+    "subject": "integration",
+    "technique": "parts",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "\\frac{x^2 \\ln x}{2} - \\frac{x^2}{4} + C"
+  },
+  {
+    "n": 9,
+    "subject": "integration",
+    "technique": "parts",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "-\\frac{x^2\\cos(2x)}{2} + \\frac{x\\sin(2x)}{2} + \\frac{\\cos(2x)}{4} + C"
+  },
+  {
+    "n": 10,
+    "subject": "integration",
+    "technique": "trigonometric",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "\\frac{x}{2} + \\frac{\\sin(2x)}{4} + C"
+  },
+  {
+    "n": 11,
+    "subject": "integration",
+    "technique": "trigonometric",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "\\frac{\\sin^3 x}{3} - \\frac{\\sin^5 x}{5} + C"
+  },
+  {
+    "n": 12,
+    "subject": "integration",
+    "technique": "trigonometric",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "-\\frac{\\cos(5x)}{10} - \\frac{\\cos x}{2} + C"
+  },
+  {
+    "n": 13,
+    "subject": "integration",
+    "technique": "trig-substitution",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "-\\sqrt{1 - x^2} + C"
+  },
+  {
+    "n": 14,
+    "subject": "integration",
+    "technique": "trig-substitution",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "-\\frac{\\sqrt{x^2 + 4}}{4x} + C"
+  },
+  {
+    "n": 15,
+    "subject": "integration",
+    "technique": "trig-substitution",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "\\frac{x}{\\sqrt{x^2 + 1}} + C"
+  },
+  {
+    "n": 16,
+    "subject": "integration",
+    "technique": "partial-fractions",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "\\frac{1}{2}\\ln\\left|\\frac{x-1}{x+1}\\right| + C"
+  },
+  {
+    "n": 17,
+    "subject": "integration",
+    "technique": "partial-fractions",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "\\ln|x| - \\frac{2}{x-1} + C"
+  },
+  {
+    "n": 18,
+    "subject": "integration",
+    "technique": "partial-fractions",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "3\\ln|x| - \\frac{1}{x} - \\ln(x^2+1) + \\arctan x + C"
+  },
+  {
+    "n": 19,
+    "subject": "integration",
+    "technique": "improper",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "2"
+  },
+  {
+    "n": 20,
+    "subject": "integration",
+    "technique": "improper",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "\\pi"
+  },
+  {
+    "n": 21,
+    "subject": "integration",
+    "technique": "improper",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "1"
+  }
+]

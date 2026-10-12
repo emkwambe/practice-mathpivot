@@ -672,7 +672,7 @@ const partialEasy: ProblemTemplate[] = [
 const partialMedium: ProblemTemplate[] = [
   {
     question: "\\int \\frac{x^2 + 1}{x(x-1)^2} \\, dx",
-    answer: "\\ln|x| + 2\\ln|x-1| - \\frac{2}{x-1} + C",
+    answer: "\\ln|x| - \\frac{2}{x-1} + C",
     steps: [
       { number: 1, description: "Set up partial fractions with repeated factor", math: "\\frac{x^2+1}{x(x-1)^2} = \\frac{A}{x} + \\frac{B}{x-1} + \\frac{C}{(x-1)^2}" },
       { number: 2, description: "Solve: x²+1 = A(x-1)² + Bx(x-1) + Cx", math: "A = 1, \\quad B = 0, \\quad C = 2" },
@@ -699,12 +699,12 @@ const partialMedium: ProblemTemplate[] = [
 const partialHard: ProblemTemplate[] = [
   {
     question: "\\int \\frac{x^3 + 2x^2 + 3x + 1}{x^2(x^2 + 1)} \\, dx",
-    answer: "\\ln|x| - \\frac{1}{x} + \\frac{1}{2}\\ln(x^2+1) + C",
+    answer: "3\\ln|x| - \\frac{1}{x} - \\ln(x^2+1) + \\arctan x + C",
     steps: [
       { number: 1, description: "Set up partial fractions", math: "\\frac{x^3+2x^2+3x+1}{x^2(x^2+1)} = \\frac{A}{x} + \\frac{B}{x^2} + \\frac{Cx+D}{x^2+1}" },
-      { number: 2, description: "Solve for coefficients", math: "A = 1, \\quad B = -1, \\quad C = 0, \\quad D = 2" },
-      { number: 3, description: "Split and integrate each term", math: "\\int \\frac{1}{x} \\, dx - \\int \\frac{1}{x^2} \\, dx + \\int \\frac{2}{x^2+1} \\, dx" },
-      { number: 4, description: "Evaluate", math: "\\ln|x| + \\frac{1}{x} + 2\\arctan x + C" },
+      { number: 2, description: "Solve for coefficients", math: "A = 3, \\quad B = 1, \\quad C = -2, \\quad D = 1" },
+      { number: 3, description: "Split and integrate each term", math: "\\int \\frac{3}{x} \\, dx + \\int \\frac{1}{x^2} \\, dx + \\int \\frac{-2x+1}{x^2+1} \\, dx" },
+      { number: 4, description: "Evaluate", math: "3\\ln|x| - \\frac{1}{x} - \\ln(x^2+1) + \\arctan x + C" },
     ],
     hints: ["Include terms for all powers of repeated factors"],
     timeEstimate: 240,
@@ -951,7 +951,7 @@ const diffBasicMedium: ProblemTemplate[] = [
   },
   {
     question: "\\frac{d}{dx}\\left(\\frac{x^4 + 2x}{x}\\right)",
-    answer: "2x + \\frac{2}{x^2}",
+    answer: "3x^2",
     steps: [
       { number: 1, description: "Simplify by dividing each term by x", math: "\\frac{x^4}{x} + \\frac{2x}{x} = x^3 + 2" },
       { number: 2, description: "Differentiate the simplified expression", math: "\\frac{d}{dx}(x^3 + 2) = 3x^2" }
@@ -1129,7 +1129,7 @@ const diffProductMedium: ProblemTemplate[] = [
 const diffProductHard: ProblemTemplate[] = [
   {
     question: "\\frac{d}{dx}[(x^2 + 1)(x + 2)(3x - 1)]",
-    answer: "12x^3 + 15x^2 - 2",
+    answer: "12x^3 + 15x^2 + 2x + 5",
     steps: [
       { number: 1, description: "Group (x² + 1)(x + 2) and apply product rule with (3x - 1)", math: "\\frac{d}{dx}[(x^2+1)(x+2)] \\cdot (3x-1) + (x^2+1)(x+2) \\cdot 3" },
       { number: 2, description: "Find d/dx[(x²+1)(x+2)] using product rule", math: "2x(x+2) + (x^2+1)(1) = 3x^2 + 4x + 1" },

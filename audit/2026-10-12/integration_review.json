@@ -1,0 +1,28 @@
+{
+  "subject": "integration",
+  "reviewer": "independent-blind-solve",
+  "date": "2026-10-12",
+  "answers": [
+    { "n": 1, "letter": null, "value": "x^3/3 + 3x^2/2 + C", "flags": [] },
+    { "n": 2, "letter": null, "value": "(2/3)x^(3/2) + C", "flags": [] },
+    { "n": 3, "letter": null, "value": "x^3/3 - x + C", "flags": [] },
+    { "n": 4, "letter": null, "value": "e^(x^2)/2 + C", "flags": [] },
+    { "n": 5, "letter": null, "value": "(ln x)^2/2 + C", "flags": [] },
+    { "n": 6, "letter": null, "value": "-sqrt(1 - x^2) + C", "flags": [] },
+    { "n": 7, "letter": null, "value": "-x cos x + sin x + C", "flags": [] },
+    { "n": 8, "letter": null, "value": "(x^2 ln x)/2 - x^2/4 + C", "flags": [] },
+    { "n": 9, "letter": null, "value": "-(x^2 cos 2x)/2 + (x sin 2x)/2 + (cos 2x)/4 + C", "flags": [] },
+    { "n": 10, "letter": null, "value": "x/2 + sin(2x)/4 + C", "flags": [] },
+    { "n": 11, "letter": null, "value": "sin^3 x/3 - sin^5 x/5 + C", "flags": [] },
+    { "n": 12, "letter": null, "value": "-cos(5x)/10 - cos(x)/2 + C", "flags": [] },
+    { "n": 13, "letter": null, "value": "-sqrt(1 - x^2) + C", "flags": ["duplicate-question: Q13 is literally the same integral as Q6 (u-substitution hard) — same worksheet shows it twice under two techniques"] },
+    { "n": 14, "letter": null, "value": "-sqrt(x^2 + 4)/(4x) + C", "flags": [] },
+    { "n": 15, "letter": null, "value": "x/sqrt(x^2 + 1) + C", "flags": [] },
+    { "n": 16, "letter": null, "value": "(1/2) ln|(x - 1)/(x + 1)| + C", "flags": [] },
+    { "n": 17, "letter": null, "value": "ln|x| - 2/(x - 1) + C", "flags": [] },
+    { "n": 18, "letter": null, "value": "3 ln|x| - 1/x - ln(x^2 + 1) + arctan x + C", "flags": [] },
+    { "n": 19, "letter": null, "value": "2", "flags": [] },
+    { "n": 20, "letter": null, "value": "pi", "flags": [] },
+    { "n": 21, "letter": null, "value": "1", "flags": [] }
+  ]
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "n": 1,
+    "subject": "differentiation",
+    "technique": "basic-diff",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "-\\frac{6}{x^4}"
+  },
+  {
+    "n": 2,
+    "subject": "differentiation",
+    "technique": "basic-diff",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "2x + \\frac{2}{x^2}"
+  },
+  {
+    "n": 3,
+    "subject": "differentiation",
+    "technique": "basic-diff",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "\\frac{1}{x \\ln a}"
+  },
+  {
+    "n": 4,
+    "subject": "differentiation",
+    "technique": "product-rule",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "3x^2\\cos x - x^3\\sin x"
+  },
+  {
+    "n": 5,
+    "subject": "differentiation",
+    "technique": "product-rule",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "e^x(\\sin x + \\cos x)"
+  },
+  {
+    "n": 6,
+    "subject": "differentiation",
+    "technique": "product-rule",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "12x^3 + 15x^2 - 2"
+  },
+  {
+    "n": 7,
+    "subject": "differentiation",
+    "technique": "quotient-rule",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "-\\frac{2x}{(x^2 + 1)^2}"
+  },
+  {
+    "n": 8,
+    "subject": "differentiation",
+    "technique": "quotient-rule",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "\\frac{-x^4 - 4x^2 + 1}{(x^3 - x)^2}"
+  },
+  {
+    "n": 9,
+    "subject": "differentiation",
+    "technique": "quotient-rule",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "\\frac{(2x\\sin x + x^2\\cos x)(x+1) - x^2\\sin x}{(x+1)^2}"
+  },
+  {
+    "n": 10,
+    "subject": "differentiation",
+    "technique": "chain-rule",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "2e^{2x}"
+  },
+  {
+    "n": 11,
+    "subject": "differentiation",
+    "technique": "chain-rule",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "(2x + 3)e^{x^2 + 3x}"
+  },
+  {
+    "n": 12,
+    "subject": "differentiation",
+    "technique": "chain-rule",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "\\frac{3(\\ln(\\sin x))^2 \\cos x}{\\sin x}"
+  },
+  {
+    "n": 13,
+    "subject": "differentiation",
+    "technique": "implicit",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "-\\frac{y}{x}"
+  },
+  {
+    "n": 14,
+    "subject": "differentiation",
+    "technique": "implicit",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "\\frac{1}{e^y - 1}"
+  },
+  {
+    "n": 15,
+    "subject": "differentiation",
+    "technique": "implicit",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "\\frac{2xy(x+y) - 1}{1 - x^2(x+y)}"
+  },
+  {
+    "n": 16,
+    "subject": "differentiation",
+    "technique": "logarithmic",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "x^x(\\ln x + 1)"
+  },
+  {
+    "n": 17,
+    "subject": "differentiation",
+    "technique": "logarithmic",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "x^{x^2} \\cdot x(2\\ln x + 1)"
+  },
+  {
+    "n": 18,
+    "subject": "differentiation",
+    "technique": "logarithmic",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "x^{e^x} \\cdot e^x \\left(\\ln x + \\frac{1}{x}\\right)"
+  },
+  {
+    "n": 19,
+    "subject": "differentiation",
+    "technique": "trig-derivatives",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "0"
+  },
+  {
+    "n": 20,
+    "subject": "differentiation",
+    "technique": "trig-derivatives",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "\\frac{1}{1 + \\cos x}"
+  },
+  {
+    "n": 21,
+    "subject": "differentiation",
+    "technique": "trig-derivatives",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "-\\frac{2\\sec^2 x}{(1 + \\tan x)^2}"
+  },
+  {
+    "n": 22,
+    "subject": "differentiation",
+    "technique": "higher-order",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "e^x"
+  },
+  {
+    "n": 23,
+    "subject": "differentiation",
+    "technique": "higher-order",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "\\frac{2}{x^3}"
+  },
+  {
+    "n": 24,
+    "subject": "differentiation",
+    "technique": "higher-order",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "\\frac{2(1 - x^2)}{(x^2 + 1)^2}"
+  }
+]

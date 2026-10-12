@@ -1,0 +1,31 @@
+{
+  "subject": "differentiation",
+  "reviewer": "independent-blind-solve",
+  "date": "2026-10-12",
+  "answers": [
+    { "n": 1, "letter": null, "value": "-6/x^4", "flags": [] },
+    { "n": 2, "letter": null, "value": "3x^2", "flags": [] },
+    { "n": 3, "letter": null, "value": "1/(x ln a)", "flags": [] },
+    { "n": 4, "letter": null, "value": "3x^2 cos x - x^3 sin x", "flags": [] },
+    { "n": 5, "letter": null, "value": "e^x (sin x + cos x)", "flags": [] },
+    { "n": 6, "letter": null, "value": "12x^3 + 15x^2 + 2x + 5", "flags": [] },
+    { "n": 7, "letter": null, "value": "-2x/(x^2 + 1)^2", "flags": [] },
+    { "n": 8, "letter": null, "value": "(1 - x^4 - 4x^2)/(x^3 - x)^2", "flags": [] },
+    { "n": 9, "letter": null, "value": "((2x sin x + x^2 cos x)(x + 1) - x^2 sin x)/(x + 1)^2", "flags": [] },
+    { "n": 10, "letter": null, "value": "2e^(2x)", "flags": [] },
+    { "n": 11, "letter": null, "value": "(2x + 3)e^(x^2 + 3x)", "flags": [] },
+    { "n": 12, "letter": null, "value": "3 cot x (ln(sin x))^2", "flags": [] },
+    { "n": 13, "letter": null, "value": "-y/x", "flags": [] },
+    { "n": 14, "letter": null, "value": "1/(e^y - 1)", "flags": [] },
+    { "n": 15, "letter": null, "value": "(2x^2 y + 2x y^2 - 1)/(1 - x^3 - x^2 y)", "flags": [] },
+    { "n": 16, "letter": null, "value": "x^x (ln x + 1)", "flags": [] },
+    { "n": 17, "letter": null, "value": "x^(x^2) (2x ln x + x)", "flags": [] },
+    { "n": 18, "letter": null, "value": "x^(e^x) e^x (ln x + 1/x)", "flags": [] },
+    { "n": 19, "letter": null, "value": "0", "flags": [] },
+    { "n": 20, "letter": null, "value": "1/(1 + cos x)", "flags": [] },
+    { "n": 21, "letter": null, "value": "-2 sec^2 x/(1 + tan x)^2", "flags": [] },
+    { "n": 22, "letter": null, "value": "e^x", "flags": [] },
+    { "n": 23, "letter": null, "value": "2/x^3", "flags": [] },
+    { "n": 24, "letter": null, "value": "2(1 - x^2)/(x^2 + 1)^2", "flags": [] }
+  ]
+}

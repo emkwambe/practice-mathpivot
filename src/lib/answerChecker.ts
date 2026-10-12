@@ -199,10 +199,15 @@ export function toMathjs(raw: string): string {
   s = s.replace(/\\infty/g, "Infinity");
   s = s.replace(/\binfinity\b/g, "Infinity");
   s = s.replace(/\\arcsin/g, "asin").replace(/\\arccos/g, "acos").replace(/\\arctan/g, "atan");
+  // Bare (non-LaTeX) inverse trig typed by students: arctan x -> atan x
+  s = s.replace(/\barcsin\b/g, "asin").replace(/\barccos\b/g, "acos").replace(/\barctan\b/g, "atan");
   s = s.replace(/\\ln/g, "log");
   s = s.replace(/\\log/g, "log10");
   s = s.replace(/\\(sin|cos|tan|sec|csc|cot|sinh|cosh|tanh|exp|abs)/g, "$1");
   s = s.replace(/\\/g, "");
+  // Bare ln -> log BEFORE bar conversion: "|...|" glues to "ln" ("ln|x|" ->
+  // "lnabs(x)"), which would block the word-boundary match afterwards.
+  s = s.replace(/\bln\b/g, "log");
   // Absolute value bars: |...| -> abs(...)
   let guardBars = 0;
   while (s.includes("|") && guardBars++ < 100) {
@@ -212,8 +217,6 @@ export function toMathjs(raw: string): string {
   }
   // LaTeX grouping braces and square brackets become parentheses
   s = s.replace(/\{/g, "(").replace(/\}/g, ")").replace(/\[/g, "(").replace(/\]/g, ")");
-  // Bare ln (no backslash) -> log
-  s = s.replace(/\bln\b/g, "log");
 
   // Function names, longest first so "asin"/"sinh"/"log10" win over prefixes
   const FN = "asin|acos|atan|sinh|cosh|tanh|log10|sqrt|exp|abs|sin|cos|tan|sec|csc|cot|log";
@@ -221,7 +224,7 @@ export function toMathjs(raw: string): string {
   // fn|x| merge: logabs(x) -> log(abs(x)). Runs before AND after the
   // merge-token split so "2logabs(x)" (digit-glued) is caught too.
   const wrapFnAbs = (input: string): string => {
-    const fnAbsRe = new RegExp(`(?<![a-z])(${FN})\\s*abs\\(`, "g");
+    const fnAbsRe = new RegExp(`(?<![a-z])(${FN})\\s*\\*?\\s*abs\\(`, "g");
     let out = input;
     let guard = 0;
     for (;;) {
