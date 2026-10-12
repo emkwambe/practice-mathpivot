@@ -80,11 +80,13 @@ export const genFactorForm: ProblemFactory = (rng, difficulty) => {
   const factored = (pp: number, qq: number, rr: number, ss: number) =>
     `(${xf(pp)} ${qq >= 0 ? '+' : '-'} ${num(Math.abs(qq))})(${xf(rr)} ${ss >= 0 ? '+' : '-'} ${num(Math.abs(ss))})`;
   const correct = factored(p, q, r2, s);
+  // Distractors must differ in an actual COEFFICIENT, not just factor order —
+  // when p === r2 a (px+s)(rx+q) swap is literally the same expression.
   const m = mc(rng, correct, [
-    factored(p, -q, r2, s),
-    factored(p, q, r2, -s),
-    factored(p, s, r2, q),
-    factored(p, -q, r2, -s),
+    factored(p, -q, r2, s),      // C = -qs ≠ qs
+    factored(p, q, r2, -s),      // C = -qs ≠ qs
+    factored(p, q, r2 + 1, s),   // A = p(r2+1) ≠ p·r2
+    factored(p, 2 * q, r2, s),   // B and C both differ
   ]);
   return {
     itemType: 'MC',

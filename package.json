@@ -10,6 +10,8 @@
     "preview": "vite preview",
     "start": "NODE_ENV=production node dist/boot.js",
     "check": "tsc -b",
+    "verify": "tsx regression_all_banks.ts && tsx verify_answers.ts",
+    "verify:full": "tsc -b && tsx validate_math1.ts && tsx validate_math3.ts && tsx validate_math6.ts && tsx validate_math7.ts && tsx validate_math8.ts && tsx regression_all_banks.ts && tsx verify_answers.ts",
     "format": "prettier --write .",
     "test": "vitest run",
     "db:generate": "drizzle-kit generate",

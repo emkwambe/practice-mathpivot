@@ -18,8 +18,17 @@ function normalizeText(s: string): string {
   return s
     .toLowerCase()
     .trim()
+    .replace(/−/g, "-") // unicode minus → ASCII before stripping
+    // Map comparison operators to letter tokens BEFORE the char strip, so
+    // "-7 > -4" and "-7 < -4" don't collapse to the same string, and keep
+    // the decimal point so "3.6" and "36" stay distinct.
+    .replace(/≤|\\leq/g, " le ")
+    .replace(/≥|\\geq/g, " ge ")
+    .replace(/≠|\\neq/g, " ne ")
+    .replace(/</g, " lt ")
+    .replace(/>/g, " gt ")
     .replace(/\s+/g, " ")
-    .replace(/[^a-z0-9+\-]/g, "");
+    .replace(/[^a-z0-9+\-.]/g, "");
 }
 
 function areTextEquivalent(user: string, correct: string): boolean {
@@ -56,8 +65,14 @@ function parseNumber(s: string): number | null {
     // Not a valid expression
   }
 
-  const direct = parseFloat(trimmed);
-  if (!isNaN(direct)) return direct;
+  // Leading-number fallback — ONLY when the whole string is a plain number
+  // (optionally with $/%/thousand separators). Never parseFloat a string with
+  // trailing content: "6x + 14" and "6x - 10" would both collapse to 6, and
+  // "3, 14, 4" / "3, 7, 8" would both collapse to 3 — marking wrong answers right.
+  const cleaned = trimmed
+    .replace(/(\d),(?=\d{3}(\D|$))/g, "$1") // thousand separators
+    .replace(/[$%\s]/g, "");
+  if (/^-?\d+(\.\d+)?$/.test(cleaned)) return parseFloat(cleaned);
 
   return null;
 }
@@ -301,6 +316,15 @@ function detectAnswerType(answer: string): AnswerType {
   }
 
   if (["infinity", "inf", "-infinity", "-inf", "undefined", "dne", "convergent", "divergent"].includes(a)) {
+    return "text";
+  }
+
+  // Comma-separated lists (dimension triples "3, 7, 8", coordinate pairs "(−1, 2)")
+  // must compare as ordered text — a numeric parse would collapse them to the
+  // first element and mark wrong values correct. Thousand separators ("54,000")
+  // are stripped first so large numeric answers stay numerical.
+  const noThousands = a.replace(/(\d),(?=\d{3}(\D|$))/g, "$1");
+  if (noThousands.includes(",")) {
     return "text";
   }
 
