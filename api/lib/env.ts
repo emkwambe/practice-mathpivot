@@ -8,12 +8,18 @@ function required(name: string): string {
   return value ?? "";
 }
 
+function optional(name: string): string {
+  return process.env[name] ?? "";
+}
+
 export const env = {
   databaseUrl: required("DATABASE_URL"),
   clerkSecretKey: required("CLERK_SECRET_KEY"),
   clerkPublishableKey: required("CLERK_PUBLISHABLE_KEY"),
-  stripeSecretKey: required("STRIPE_SECRET_KEY"),
-  stripeWebhookSecret: required("STRIPE_WEBHOOK_SECRET"),
-  appUrl: required("APP_URL"),
+  // Reserved for future billing/uploads — no code reads these yet,
+  // so they must not block production boot.
+  stripeSecretKey: optional("STRIPE_SECRET_KEY"),
+  stripeWebhookSecret: optional("STRIPE_WEBHOOK_SECRET"),
+  appUrl: optional("APP_URL"),
   isProduction: process.env.NODE_ENV === "production",
 };

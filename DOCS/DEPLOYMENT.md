@@ -1,224 +1,107 @@
-# Deployment Guide
+# Deploying MathPivot to practice.mathpivot.com
 
-## Prerequisites
+Single-domain deployment: all courses (Calculus, Math 1 EOC, Math 3 EOC, Math 6–8 EOG)
+are served from one app; users switch courses via the in-app course picker.
 
-- Node.js 20+
-- A Vercel account (free)
-- A Neon account (free tier)
-- A Clerk account (free tier)
-- A Stripe account (free to start)
-- Your domain: `mathpivot.com` (or subdomain `practice.mathpivot.com`)
+## Architecture
 
----
+- One Node process serves everything: the Hono/tRPC API (`/api/trpc/*`) and the
+  built frontend static files with SPA fallback (`api/boot.ts` + `api/lib/vite.ts`).
+- `pnpm build` produces:
+  - `dist/public/` — Vite frontend bundle
+  - `dist/boot.js` — esbuild-bundled production server
+- `pnpm start` runs `NODE_ENV=production node dist/boot.js` on `PORT` (default 3000).
+  (That script syntax is bash; on Windows use `set NODE_ENV=production&& node dist/boot.js`
+  or cross-env. Linux hosts are unaffected.)
 
-## Step 1: Clone & Install
+## Required environment variables
 
-```bash
-git clone <your-repo-url> mathpivot
-cd mathpivot
-npm install
-```
+See [.env.example](../.env.example). In production the server refuses to boot without:
 
----
+| Variable | Source |
+|---|---|
+| `DATABASE_URL` | Neon dashboard → Connection string (pooled) |
+| `CLERK_SECRET_KEY` | Clerk dashboard → API keys |
+| `CLERK_PUBLISHABLE_KEY` | Clerk dashboard → API keys |
+| `VITE_CLERK_PUBLISHABLE_KEY` | Same value; baked into the frontend **at build time** |
 
-## Step 2: Set Up Neon PostgreSQL
+`STRIPE_*` and `APP_URL` are reserved placeholders — optional, nothing reads them yet.
 
-1. Go to [neon.tech](https://neon.tech) and sign up
-2. Create a new project
-3. Copy the connection string:
-   ```
-   postgresql://user:password@host.neon.tech/dbname?sslmode=require
-   ```
-4. Save it as `DATABASE_URL` in your `.env` file
+## Hosting options
 
----
+Any Node 20+ host that can run a long-lived process works.
 
-## Step 3: Set Up Clerk Auth
+### Option A — Render / Railway / Fly.io (simplest)
 
-1. Go to [clerk.com](https://clerk.com) and create an application
-2. In **Configure → API Keys**, copy:
-   - `Publishable key` (starts with `pk_test_` or `pk_live_`)
-   - `Secret key` (starts with `sk_test_` or `sk_live_`)
-3. Add to `.env`:
-   ```
-   CLERK_PUBLISHABLE_KEY=pk_test_...
-   CLERK_SECRET_KEY=sk_test_...
-   VITE_CLERK_PUBLISHABLE_KEY=pk_test_...
-   ```
-4. In **Configure → Sessions**, enable:
-   - JWT session tokens
-   - Custom claims (for user ID)
-5. Add your domain to **Configure → URLs → Allowed origins**:
-   ```
-   https://practice.mathpivot.com
-   http://localhost:3000
-   ```
+1. Connect the GitHub repo `emkwambe/practice-mathpivot`.
+2. Build command: `pnpm install && pnpm build`
+3. Start command: `pnpm start`
+4. Set the env vars above in the host's dashboard.
+5. The host assigns a TLS-terminating URL; point DNS at it (below).
 
----
-
-## Step 4: Set Up Stripe
-
-1. Go to [stripe.com](https://stripe.com) and create an account
-2. In **Products → Add product**, create:
-   - **Calculus Practice Monthly** — $12.00, Recurring, Monthly
-   - **Calculus Complete Pack** — $19.00, One-time
-3. Copy the Price IDs (they start with `price_`)
-4. Add to `.env`:
-   ```
-   STRIPE_SECRET_KEY=sk_test_...
-   STRIPE_WEBHOOK_SECRET=whsec_...
-   STRIPE_PRICE_MONTHLY=price_...
-   STRIPE_PRICE_CALCULUS_PACK=price_...
-   ```
-5. Set up webhook endpoint:
-   - URL: `https://practice.mathpivot.com/api/webhooks/stripe`
-   - Events: `checkout.session.completed`, `invoice.payment_succeeded`, `customer.subscription.deleted`
-
----
-
-## Step 5: Configure Environment Variables
-
-Create `.env` file in project root:
+### Option B — VPS (full control)
 
 ```bash
-# Database
-DATABASE_URL=postgresql://...
-
-# Auth (Clerk)
-CLERK_SECRET_KEY=sk_test_...
-CLERK_PUBLISHABLE_KEY=pk_test_...
-VITE_CLERK_PUBLISHABLE_KEY=pk_test_...
-
-# Payments (Stripe)
-STRIPE_SECRET_KEY=sk_test_...
-STRIPE_WEBHOOK_SECRET=whsec_...
-STRIPE_PRICE_MONTHLY=price_...
-STRIPE_PRICE_CALCULUS_PACK=price_...
-
-# App
-APP_URL=http://localhost:3000
-NODE_ENV=development
+git clone https://github.com/emkwambe/practice-mathpivot.git
+cd practice-mathpivot
+corepack enable && pnpm install
+cp .env.example .env   # fill in real values
+pnpm build
+NODE_ENV=production PORT=3000 node dist/boot.js   # or: pnpm start
 ```
 
----
+Keep it alive with systemd or pm2 (`pm2 start dist/boot.js --name mathpivot --env production`).
+Put Caddy or nginx in front for TLS on 443 → localhost:3000.
 
-## Step 6: Push Database Schema
+Caddy example:
 
-```bash
-npm run db:push
+```
+practice.mathpivot.com {
+    reverse_proxy 127.0.0.1:3000
+}
 ```
 
-This creates the tables in your Neon database.
+## DNS
 
----
+In the mathpivot.com DNS zone (wherever the domain is registered):
 
-## Step 7: Run Locally
+| Type | Name | Value |
+|---|---|---|
+| CNAME | `practice` | your host's assigned hostname (e.g. `your-app.onrender.com`) |
 
-```bash
-npm run dev
-```
+If the host requires an apex/ALIAS instead, follow their custom-domain instructions —
+they will give you the exact record to create.
 
-Open `http://localhost:3000` in your browser.
+## Clerk configuration for the new domain
 
-Test:
-1. Sign up with Google or email
-2. Go to Practice → try a few problems
-3. Check that progress is saved (check Network tab for tRPC calls)
-4. Generate a worksheet and print it
+1. Clerk dashboard → your application → **Domains**: add `practice.mathpivot.com`.
+2. If using a **production** Clerk instance (recommended for a live site), switch all
+   three keys from `*_test_*` to the live `pk_live_…` / `sk_live_…` values.
+3. Add `https://practice.mathpivot.com` to allowed redirect URLs if sign-in flows
+   redirect after auth.
 
----
+## Database
 
-## Step 8: Deploy to Vercel
+1. Neon: create the production database, copy the pooled connection string into `DATABASE_URL`.
+2. Apply schema: `pnpm db:push` (or `pnpm db:migrate` if using generated migrations).
+3. Auth-gated endpoints read the Clerk user id from the `x-clerk-user-id` header
+   (`api/context.ts`) — practice/generation endpoints are public and work without login.
 
-### Option A: Git Integration (Recommended)
+## Pre-deploy checklist
 
-1. Push code to GitHub/GitLab
-2. In Vercel dashboard, click **Add New Project**
-3. Import your repository
-4. Configure:
-   - **Framework Preset:** Other
-   - **Build Command:** `npm run build`
-   - **Output Directory:** `dist`
-5. Add all environment variables from `.env`
-6. Click **Deploy**
+- [ ] `pnpm run check` — typecheck passes
+- [ ] `pnpm verify:full` — all generators produce correct answers (also runs in CI on every push via `.github/workflows/verify.yml`)
+- [ ] `pnpm build` succeeds
+- [ ] Smoke test: `PORT=3100 NODE_ENV=production node dist/boot.js`, open
+      `http://localhost:3100/`, generate a worksheet, print-preview it
+- [ ] Env vars set on the host; **rebuild after changing `VITE_*` vars**
+- [ ] DNS CNAME `practice` → host; TLS certificate issued
+- [ ] Clerk domain + live keys configured
+- [ ] `https://practice.mathpivot.com/api/trpc` reachable (404 JSON on unknown route is expected)
 
-### Option B: Vercel CLI
+## Notes
 
-```bash
-npm i -g vercel
-vercel login
-vercel --prod
-```
-
----
-
-## Step 9: Connect Custom Domain
-
-1. In Vercel dashboard, go to **Project Settings → Domains**
-2. Add `practice.mathpivot.com`
-3. Follow DNS instructions:
-   - Add CNAME record: `practice` → `cname.vercel-dns.com`
-4. Wait for SSL certificate (auto-provisioned)
-
----
-
-## Step 10: Verify Production
-
-1. Visit `https://practice.mathpivot.com`
-2. Sign up / sign in
-3. Complete a practice session
-4. Check database for saved progress:
-   ```sql
-   SELECT * FROM users;
-   SELECT * FROM progress;
-   ```
-5. Test Stripe checkout (use test card `4242 4242 4242 4242`)
-
----
-
-## Troubleshooting
-
-### Build fails on Vercel
-```bash
-# Check for TypeScript errors locally
-npm run check
-
-# Ensure all env vars are set in Vercel dashboard
-```
-
-### Database connection fails
-```bash
-# Test connection
-npx drizzle-kit studio
-
-# Check DATABASE_URL format (must include ?sslmode=require)
-```
-
-### Clerk auth not working
-```bash
-# Check browser console for errors
-# Verify VITE_CLERK_PUBLISHABLE_KEY is set
-# Check Clerk dashboard for allowed origins
-```
-
-### Stripe webhook not received
-```bash
-# Use Stripe CLI for local testing
-stripe listen --forward-to localhost:3000/api/webhooks/stripe
-```
-
----
-
-## Production Checklist
-
-- [ ] All environment variables set in Vercel
-- [ ] Database schema pushed
-- [ ] Clerk allowed origins include production domain
-- [ ] Stripe webhooks configured for production URL
-- [ ] Custom domain connected with SSL
-- [ ] Google Analytics or PostHog tracking installed
-- [ ] Sentry error tracking installed
-- [ ] Privacy policy page created
-- [ ] Terms of service page created
-- [ ] Refund policy defined
-- [ ] Support email configured
+- Port conflicts: the dev server takes port 3000 by default; use `PORT` to move the
+  production server.
+- The app is a pure SPA + JSON API — no server-side rendering, no special CDN needs.
+  Optionally put Cloudflare in front for caching of `dist/public` assets.
