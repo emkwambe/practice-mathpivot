@@ -2475,7 +2475,7 @@ const limitLhopitalMedium: ProblemTemplate[] = [
 const limitLhopitalHard: ProblemTemplate[] = [
   {
     question: "\\lim_{x \\to 0} \\frac{e^x - e^{-x} - 2x}{x - \\sin(x)}",
-    answer: "1",
+    answer: "2",
     steps: [
       { number: 1, description: "Verify 0/0 form", math: "\\frac{1 - 1 - 0}{0 - 0} = \\frac{0}{0}" },
       { number: 2, description: "Apply L'Hôpital (1st time)", math: "\\lim_{x \\to 0} \\frac{e^x + e^{-x} - 2}{1 - \\cos(x)} = \\frac{0}{0}" },

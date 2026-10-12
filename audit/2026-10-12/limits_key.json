@@ -1,0 +1,170 @@
+[
+  {
+    "n": 1,
+    "subject": "limits",
+    "technique": "direct-substitution",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "1"
+  },
+  {
+    "n": 2,
+    "subject": "limits",
+    "technique": "direct-substitution",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "3"
+  },
+  {
+    "n": 3,
+    "subject": "limits",
+    "technique": "direct-substitution",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "ln(2)"
+  },
+  {
+    "n": 4,
+    "subject": "limits",
+    "technique": "factoring",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "6"
+  },
+  {
+    "n": 5,
+    "subject": "limits",
+    "technique": "factoring",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "3"
+  },
+  {
+    "n": 6,
+    "subject": "limits",
+    "technique": "factoring",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "3"
+  },
+  {
+    "n": 7,
+    "subject": "limits",
+    "technique": "rationalizing",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "1/2"
+  },
+  {
+    "n": 8,
+    "subject": "limits",
+    "technique": "rationalizing",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "1/6"
+  },
+  {
+    "n": 9,
+    "subject": "limits",
+    "technique": "rationalizing",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "-1/6"
+  },
+  {
+    "n": 10,
+    "subject": "limits",
+    "technique": "special-trig",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "1"
+  },
+  {
+    "n": 11,
+    "subject": "limits",
+    "technique": "special-trig",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "1/2"
+  },
+  {
+    "n": 12,
+    "subject": "limits",
+    "technique": "special-trig",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "-1/6"
+  },
+  {
+    "n": 13,
+    "subject": "limits",
+    "technique": "lhopital",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "1"
+  },
+  {
+    "n": 14,
+    "subject": "limits",
+    "technique": "lhopital",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "3/2"
+  },
+  {
+    "n": 15,
+    "subject": "limits",
+    "technique": "lhopital",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "2"
+  },
+  {
+    "n": 16,
+    "subject": "limits",
+    "technique": "infinite-limits",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "infinity"
+  },
+  {
+    "n": 17,
+    "subject": "limits",
+    "technique": "infinite-limits",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "infinity"
+  },
+  {
+    "n": 18,
+    "subject": "limits",
+    "technique": "infinite-limits",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "infinity"
+  },
+  {
+    "n": 19,
+    "subject": "limits",
+    "technique": "limits-at-infinity",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "3"
+  },
+  {
+    "n": 20,
+    "subject": "limits",
+    "technique": "limits-at-infinity",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "3/2"
+  },
+  {
+    "n": 21,
+    "subject": "limits",
+    "technique": "limits-at-infinity",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "1/2"
+  }
+]
