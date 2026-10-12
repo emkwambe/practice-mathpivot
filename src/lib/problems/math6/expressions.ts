@@ -3,7 +3,7 @@
 // Covers released items 1, 2, 4, 5, 7, 8, 10, 12, 14, 16, 29 (original items only).
 
 import type { ProblemFactory } from '../../problemGenerator';
-import { choice, randInt } from '../math1/rng';
+import { choice, randInt, shuffle } from '../math1/rng';
 import { linExpr, mc, num, varTerm } from '../math1/latex';
 import { inequalityLineSvg } from './svg';
 import { lineGraphSvg } from '../math7/svg';
@@ -236,16 +236,12 @@ export const genInequalityGraph: ProblemFactory = (rng) => {
   const bound = randInt(rng, 3, 9);
   const cmp = choice(rng, ['gt', 'lt', 'ge', 'le'] as const);
   const cmpSym = { gt: '>', lt: '<', ge: '\\geq', le: '\\leq' }[cmp];
-  const others = (['gt', 'lt', 'ge', 'le'] as const).filter((c) => c !== cmp);
-  const wrongCmps = [others[randInt(rng, 0, 2)], others[randInt(rng, 0, 2)], others[randInt(rng, 0, 2)]];
-  // ensure wrong options differ visually from the correct one
-  for (let i = 0; i < 3; i++) {
-    if (wrongCmps[i] === cmp) wrongCmps[i] = cmp === 'gt' ? 'lt' : 'gt';
-  }
+  // distractors = the three OTHER comparison types, shuffled — never duplicated
+  const others = shuffle(rng, (['gt', 'lt', 'ge', 'le'] as const).filter((c) => c !== cmp));
   const correctIdx = randInt(rng, 0, 3);
   const svgs: string[] = [];
   let wi = 0;
-  for (let i = 0; i < 4; i++) svgs.push(inequalityLineSvg(i === correctIdx ? cmp : wrongCmps[wi++], bound));
+  for (let i = 0; i < 4; i++) svgs.push(inequalityLineSvg(i === correctIdx ? cmp : others[wi++], bound));
   const letters = ['A', 'B', 'C', 'D'];
   const v = choice(rng, ['b', 'x', 'n'] as const);
   return {

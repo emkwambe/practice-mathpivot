@@ -1,0 +1,195 @@
+[
+  {
+    "n": 1,
+    "subject": "math6-eog",
+    "technique": "g6-ratios",
+    "difficulty": "easy",
+    "itemType": "MC",
+    "answer": "55\\%",
+    "choices": [
+      "45\\%",
+      "55\\%",
+      "44\\%",
+      "65\\%"
+    ]
+  },
+  {
+    "n": 2,
+    "subject": "math6-eog",
+    "technique": "g6-ratios",
+    "difficulty": "medium",
+    "itemType": "MC",
+    "answer": "66",
+    "choices": [
+      "66",
+      "72",
+      "29",
+      "69"
+    ]
+  },
+  {
+    "n": 3,
+    "subject": "math6-eog",
+    "technique": "g6-ratios",
+    "difficulty": "hard",
+    "itemType": "MC",
+    "answer": "38\\%",
+    "choices": [
+      "30\\%",
+      "38\\%",
+      "62\\%",
+      "43\\%"
+    ]
+  },
+  {
+    "n": 4,
+    "subject": "math6-eog",
+    "technique": "g6-expressions-equations",
+    "difficulty": "easy",
+    "itemType": "GR",
+    "answer": "21"
+  },
+  {
+    "n": 5,
+    "subject": "math6-eog",
+    "technique": "g6-expressions-equations",
+    "difficulty": "medium",
+    "itemType": "MC",
+    "answer": "y = 30x",
+    "choices": [
+      "y = 40x",
+      "x = 30y",
+      "y = 30x",
+      "y = 20x"
+    ]
+  },
+  {
+    "n": 6,
+    "subject": "math6-eog",
+    "technique": "g6-expressions-equations",
+    "difficulty": "hard",
+    "itemType": "MC",
+    "answer": "C",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "svgChoices": true
+  },
+  {
+    "n": 7,
+    "subject": "math6-eog",
+    "technique": "g6-number-system",
+    "difficulty": "easy",
+    "itemType": "MC",
+    "answer": "H, G, I, F",
+    "choices": [
+      "H, G, I, F",
+      "G, H, I, F",
+      "F, I, G, H",
+      "H, I, G, F"
+    ]
+  },
+  {
+    "n": 8,
+    "subject": "math6-eog",
+    "technique": "g6-number-system",
+    "difficulty": "medium",
+    "itemType": "GR",
+    "answer": "11.58"
+  },
+  {
+    "n": 9,
+    "subject": "math6-eog",
+    "technique": "g6-number-system",
+    "difficulty": "hard",
+    "itemType": "GR",
+    "answer": "319"
+  },
+  {
+    "n": 10,
+    "subject": "math6-eog",
+    "technique": "g6-geometry",
+    "difficulty": "easy",
+    "itemType": "MC",
+    "answer": "22 \\text{ square centimeters}",
+    "choices": [
+      "22 \\text{ square centimeters}",
+      "5 \\text{ square centimeters}",
+      "6 \\text{ square centimeters}",
+      "21 \\text{ square centimeters}"
+    ]
+  },
+  {
+    "n": 11,
+    "subject": "math6-eog",
+    "technique": "g6-geometry",
+    "difficulty": "medium",
+    "itemType": "MC",
+    "answer": "18 \\frac{63}{64} \\text{ cubic inches}",
+    "choices": [
+      "19 \\frac{63}{64} \\text{ cubic inches}",
+      "18 \\frac{63}{64} \\text{ cubic inches}",
+      "6 \\frac{21}{64} \\text{ cubic inches}",
+      "25 \\frac{5}{16} \\text{ cubic inches}"
+    ]
+  },
+  {
+    "n": 12,
+    "subject": "math6-eog",
+    "technique": "g6-geometry",
+    "difficulty": "hard",
+    "itemType": "MC",
+    "answer": "32 \\text{ square meters}",
+    "choices": [
+      "24 \\text{ square meters}",
+      "32 \\text{ square meters}",
+      "12 \\text{ square meters}",
+      "28 \\text{ square meters}"
+    ]
+  },
+  {
+    "n": 13,
+    "subject": "math6-eog",
+    "technique": "g6-statistics",
+    "difficulty": "easy",
+    "itemType": "MC",
+    "answer": "102",
+    "choices": [
+      "100",
+      "107",
+      "102",
+      "104"
+    ]
+  },
+  {
+    "n": 14,
+    "subject": "math6-eog",
+    "technique": "g6-statistics",
+    "difficulty": "medium",
+    "itemType": "MC",
+    "answer": "49",
+    "choices": [
+      "51",
+      "47",
+      "49",
+      "75"
+    ]
+  },
+  {
+    "n": 15,
+    "subject": "math6-eog",
+    "technique": "g6-statistics",
+    "difficulty": "hard",
+    "itemType": "MC",
+    "answer": "3",
+    "choices": [
+      "12",
+      "9",
+      "5",
+      "3"
+    ]
+  }
+]

@@ -244,7 +244,10 @@ export const genTempOrdering: ProblemFactory = (rng) => {
   const base = randInt(rng, 45, 65);
   const d1 = randInt(rng, 3, 9); // G cooler than F
   const d2 = randInt(rng, 3, 9); // H cooler than G
-  const d3 = randInt(rng, 1, d1 + d2 - 1); // I warmer than H, but below F
+  // I warmer than H but below F — and d3 ≠ d2 so I never ties with G
+  let d3 = randInt(rng, 1, d1 + d2 - 1);
+  if (d3 === d2) d3 = d2 === 1 ? 2 : d2 - 1;
+  if (d3 === d2 || d3 > d1 + d2 - 1) return genTempOrdering(rng, 'medium');
   const F = base;
   const G = F - d1;
   const H = G - d2;
