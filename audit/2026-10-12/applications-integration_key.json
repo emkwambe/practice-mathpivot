@@ -1,0 +1,170 @@
+[
+  {
+    "n": 1,
+    "subject": "applications-integration",
+    "technique": "area-between-curves",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "\\frac{1}{6}"
+  },
+  {
+    "n": 2,
+    "subject": "applications-integration",
+    "technique": "area-between-curves",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "\\frac{4}{3}"
+  },
+  {
+    "n": 3,
+    "subject": "applications-integration",
+    "technique": "area-between-curves",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "\\frac{8}{3}"
+  },
+  {
+    "n": 4,
+    "subject": "applications-integration",
+    "technique": "volumes",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "12\\pi"
+  },
+  {
+    "n": 5,
+    "subject": "applications-integration",
+    "technique": "volumes",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "\\frac{32\\pi}{5}"
+  },
+  {
+    "n": 6,
+    "subject": "applications-integration",
+    "technique": "volumes",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "\\frac{64\\pi}{15}"
+  },
+  {
+    "n": 7,
+    "subject": "applications-integration",
+    "technique": "arc-length",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "5"
+  },
+  {
+    "n": 8,
+    "subject": "applications-integration",
+    "technique": "arc-length",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "\\frac{59}{24}"
+  },
+  {
+    "n": 9,
+    "subject": "applications-integration",
+    "technique": "arc-length",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "\\frac{38}{3}"
+  },
+  {
+    "n": 10,
+    "subject": "applications-integration",
+    "technique": "surface-area",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "16\\pi"
+  },
+  {
+    "n": 11,
+    "subject": "applications-integration",
+    "technique": "surface-area",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "\\frac{56\\pi}{3}"
+  },
+  {
+    "n": 12,
+    "subject": "applications-integration",
+    "technique": "surface-area",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "\\frac{152\\pi}{3}"
+  },
+  {
+    "n": 13,
+    "subject": "applications-integration",
+    "technique": "work",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "120"
+  },
+  {
+    "n": 14,
+    "subject": "applications-integration",
+    "technique": "work",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "10000"
+  },
+  {
+    "n": 15,
+    "subject": "applications-integration",
+    "technique": "work",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "15680"
+  },
+  {
+    "n": 16,
+    "subject": "applications-integration",
+    "technique": "center-of-mass",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "3.4"
+  },
+  {
+    "n": 17,
+    "subject": "applications-integration",
+    "technique": "center-of-mass",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "\\frac{9}{4}"
+  },
+  {
+    "n": 18,
+    "subject": "applications-integration",
+    "technique": "center-of-mass",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "\\frac{12}{5}"
+  },
+  {
+    "n": 19,
+    "subject": "applications-integration",
+    "technique": "averages-probability",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "3"
+  },
+  {
+    "n": 20,
+    "subject": "applications-integration",
+    "technique": "averages-probability",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "3"
+  },
+  {
+    "n": 21,
+    "subject": "applications-integration",
+    "technique": "averages-probability",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "\\frac{1}{5}"
+  }
+]

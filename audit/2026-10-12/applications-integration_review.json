@@ -1,0 +1,28 @@
+{
+  "subject": "applications-integration",
+  "reviewer": "independent-blind-solve",
+  "date": "2026-10-12",
+  "answers": [
+    { "n": 1, "letter": null, "value": "1/6", "flags": [] },
+    { "n": 2, "letter": null, "value": "4/3", "flags": [] },
+    { "n": 3, "letter": null, "value": "8/3", "flags": [] },
+    { "n": 4, "letter": null, "value": "12 pi", "flags": [] },
+    { "n": 5, "letter": null, "value": "32 pi/5", "flags": [] },
+    { "n": 6, "letter": null, "value": "64 pi/15", "flags": [] },
+    { "n": 7, "letter": null, "value": "5", "flags": [] },
+    { "n": 8, "letter": null, "value": "59/24", "flags": [] },
+    { "n": 9, "letter": null, "value": "38/3", "flags": [] },
+    { "n": 10, "letter": null, "value": "16 pi", "flags": [] },
+    { "n": 11, "letter": null, "value": "56 pi/3", "flags": [] },
+    { "n": 12, "letter": null, "value": "152 pi/3", "flags": [] },
+    { "n": 13, "letter": null, "value": "120", "flags": [] },
+    { "n": 14, "letter": null, "value": "10000", "flags": [] },
+    { "n": 15, "letter": null, "value": "15680", "flags": [] },
+    { "n": 16, "letter": null, "value": "3.4", "flags": [] },
+    { "n": 17, "letter": null, "value": "9/4", "flags": [] },
+    { "n": 18, "letter": null, "value": "12/5", "flags": [] },
+    { "n": 19, "letter": null, "value": "3", "flags": [] },
+    { "n": 20, "letter": null, "value": "3", "flags": [] },
+    { "n": 21, "letter": null, "value": "1/5", "flags": [] }
+  ]
+}
