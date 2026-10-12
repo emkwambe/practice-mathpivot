@@ -145,14 +145,20 @@ export const genRecursiveExplicit: ProblemFactory = (rng) => {
   const a1 = randInt(rng, 1, 8);
   // a_n = d n + (a1 - d)
   const c = a1 - d;
-  const correct = c === 0 ? `a_n = ${d}n` : `a_n = ${varN(d)} ${c > 0 ? '+' : '-'} ${num(Math.abs(c))}`;
-  const m2 = mc(rng, correct, [
-    `a_n = ${varN(d)} + ${num(a1)}`,
-    `a_n = ${varN(d + 1)} ${c >= 0 ? '+' : '-'} ${num(Math.abs(c))}`,
-    `a_n = ${varN(d - 1)} ${c >= 0 ? '+' : '-'} ${num(Math.abs(c))}`,
-    `a_n = ${varN(d)} ${c + 2 >= 0 ? '+' : '-'} ${num(Math.abs(c + 2))}`,
-  ]);
   function varN(k: number) { return k === 1 ? 'n' : k === -1 ? '-n' : `${num(k)}n`; }
+  // Render "varN(k) ± |t|", dropping the n-term when k=0 and the constant when t=0.
+  function rule(k: number, t: number) {
+    const nTerm = k === 0 ? '' : varN(k);
+    const cTerm = t === 0 ? '' : `${nTerm ? (t > 0 ? ' + ' : ' - ') : t > 0 ? '' : '-'}${num(Math.abs(t))}`;
+    return nTerm + cTerm || '0';
+  }
+  const correct = `a_n = ${rule(d, c)}`;
+  const m2 = mc(rng, correct, [
+    `a_n = ${rule(d, a1)}`,
+    `a_n = ${rule(d + 1, c)}`,
+    `a_n = ${rule(d - 1, c)}`,
+    `a_n = ${rule(d, c + 2)}`,
+  ]);
   return {
     itemType: 'MC',
     context: `A sequence is defined recursively by a(n+1) = a(n) ${d >= 0 ? '+' : '−'} ${Math.abs(d)}, with a(1) = ${a1}. Which explicit formula defines the same sequence?`,

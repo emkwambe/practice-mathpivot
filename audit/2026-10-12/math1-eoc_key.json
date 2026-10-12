@@ -1,0 +1,236 @@
+[
+  {
+    "n": 1,
+    "subject": "math1-eoc",
+    "technique": "m1-linear-equations",
+    "difficulty": "easy",
+    "itemType": "MC",
+    "answer": "4x + 8",
+    "choices": [
+      "4x + 8",
+      "x^2 + 4x",
+      "2x + 4",
+      "4x + 4"
+    ]
+  },
+  {
+    "n": 2,
+    "subject": "math1-eoc",
+    "technique": "m1-linear-equations",
+    "difficulty": "medium",
+    "itemType": "GR",
+    "answer": "-10"
+  },
+  {
+    "n": 3,
+    "subject": "math1-eoc",
+    "technique": "m1-linear-equations",
+    "difficulty": "hard",
+    "itemType": "GR",
+    "answer": "-2.1"
+  },
+  {
+    "n": 4,
+    "subject": "math1-eoc",
+    "technique": "m1-systems",
+    "difficulty": "easy",
+    "itemType": "GR",
+    "answer": "-5"
+  },
+  {
+    "n": 5,
+    "subject": "math1-eoc",
+    "technique": "m1-systems",
+    "difficulty": "medium",
+    "itemType": "MC",
+    "answer": "6x + 2y \\geq 4,800 \\quad ; \\quad x + y \\leq 300",
+    "choices": [
+      "6x + 2y \\geq 4,800 \\quad ; \\quad x + y < 300",
+      "6x + 2y \\geq 4,800 \\quad ; \\quad x + y \\leq 300",
+      "6x + 2y > 4,800 \\quad ; \\quad x + y \\leq 300",
+      "6x + 2y > 4,800 \\quad ; \\quad x + y < 300"
+    ]
+  },
+  {
+    "n": 6,
+    "subject": "math1-eoc",
+    "technique": "m1-systems",
+    "difficulty": "hard",
+    "itemType": "MC",
+    "answer": "no solution",
+    "choices": [
+      "one solution",
+      "infinitely many solutions",
+      "no solution",
+      "two solutions"
+    ]
+  },
+  {
+    "n": 7,
+    "subject": "math1-eoc",
+    "technique": "m1-functions",
+    "difficulty": "easy",
+    "itemType": "MC",
+    "answer": "a_n = 1n",
+    "choices": [
+      "a_n = 1n",
+      "a_n = n + 1",
+      "a_n = 0n + 0",
+      "a_n = 2n + 0"
+    ]
+  },
+  {
+    "n": 8,
+    "subject": "math1-eoc",
+    "technique": "m1-functions",
+    "difficulty": "medium",
+    "itemType": "GR",
+    "answer": "334"
+  },
+  {
+    "n": 9,
+    "subject": "math1-eoc",
+    "technique": "m1-functions",
+    "difficulty": "hard",
+    "itemType": "MC",
+    "answer": "A taxi service charges a per-mile rate of $30.",
+    "choices": [
+      "A taxi service charges a per-mile rate of $200.",
+      "A taxi service charges a flat fee of $30.",
+      "The ride cost increases by $200 for each additional mile.",
+      "A taxi service charges a per-mile rate of $30."
+    ]
+  },
+  {
+    "n": 10,
+    "subject": "math1-eoc",
+    "technique": "m1-quadratics-polynomials",
+    "difficulty": "easy",
+    "itemType": "MC",
+    "answer": "y = x^2 - x - 6",
+    "choices": [
+      "y = x^2 - 6",
+      "y = x^2 - x - 4",
+      "y = x^2 - x - 6",
+      "y = x^2 - 2x - 6"
+    ]
+  },
+  {
+    "n": 11,
+    "subject": "math1-eoc",
+    "technique": "m1-quadratics-polynomials",
+    "difficulty": "medium",
+    "itemType": "GR",
+    "answer": "6"
+  },
+  {
+    "n": 12,
+    "subject": "math1-eoc",
+    "technique": "m1-quadratics-polynomials",
+    "difficulty": "hard",
+    "itemType": "GR",
+    "answer": "147"
+  },
+  {
+    "n": 13,
+    "subject": "math1-eoc",
+    "technique": "m1-exponentials",
+    "difficulty": "easy",
+    "itemType": "MC",
+    "answer": "2.11",
+    "choices": [
+      "2.11",
+      "-0.39",
+      "5.44",
+      "5.21"
+    ]
+  },
+  {
+    "n": 14,
+    "subject": "math1-eoc",
+    "technique": "m1-exponentials",
+    "difficulty": "medium",
+    "itemType": "MC",
+    "answer": "3.13",
+    "choices": [
+      "3.13",
+      "3.26",
+      "6.23",
+      "0.63"
+    ]
+  },
+  {
+    "n": 15,
+    "subject": "math1-eoc",
+    "technique": "m1-exponentials",
+    "difficulty": "hard",
+    "itemType": "GR",
+    "answer": "8"
+  },
+  {
+    "n": 16,
+    "subject": "math1-eoc",
+    "technique": "m1-exponents-geometry",
+    "difficulty": "easy",
+    "itemType": "GR",
+    "answer": "8"
+  },
+  {
+    "n": 17,
+    "subject": "math1-eoc",
+    "technique": "m1-exponents-geometry",
+    "difficulty": "medium",
+    "itemType": "GR",
+    "answer": "10"
+  },
+  {
+    "n": 18,
+    "subject": "math1-eoc",
+    "technique": "m1-exponents-geometry",
+    "difficulty": "hard",
+    "itemType": "GR",
+    "answer": "1"
+  },
+  {
+    "n": 19,
+    "subject": "math1-eoc",
+    "technique": "m1-statistics",
+    "difficulty": "easy",
+    "itemType": "MC",
+    "answer": "3",
+    "choices": [
+      "3",
+      "3.35",
+      "60",
+      "6"
+    ]
+  },
+  {
+    "n": 20,
+    "subject": "math1-eoc",
+    "technique": "m1-statistics",
+    "difficulty": "medium",
+    "itemType": "MC",
+    "answer": "19,000",
+    "choices": [
+      "7,500",
+      "19,000",
+      "61,100",
+      "26,800"
+    ]
+  },
+  {
+    "n": 21,
+    "subject": "math1-eoc",
+    "technique": "m1-statistics",
+    "difficulty": "hard",
+    "itemType": "MC",
+    "answer": "The outlier causes the data distribution to be strongly skewed to the left.",
+    "choices": [
+      "The outlier causes the data distribution to be more concentrated near the mean.",
+      "The outlier causes the data distribution to be more symmetrical.",
+      "The outlier causes the data distribution to be strongly skewed to the right.",
+      "The outlier causes the data distribution to be strongly skewed to the left."
+    ]
+  }
+]

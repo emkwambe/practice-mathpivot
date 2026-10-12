@@ -129,7 +129,11 @@ export const genClassifySystem: ProblemFactory = (rng, difficulty) => {
   else c2 = randInt(rng, -9, 9); // will adjust slope instead
   const slope2Num = kind === 'one' ? mSlope + choice(rng, [1, 2, -1] as const) : mSlope;
   const eq1 = `y = \\frac{${mSlope}}{${k}}x ${b >= 0 ? '+' : '-'} ${num(Math.abs(b))}`;
-  const eq2 = `${k}y = ${slope2Num}x ${c2 >= 0 ? '+' : '-'} ${num(Math.abs(c2))}`;
+  const slope2Str = slope2Num === 1 ? 'x' : slope2Num === -1 ? '-x' : `${num(slope2Num)}x`;
+  const eq2 =
+    slope2Num === 0
+      ? `${k}y = ${num(c2)}`
+      : `${k}y = ${slope2Str} ${c2 >= 0 ? '+' : '-'} ${num(Math.abs(c2))}`;
   const label = kind === 'one' ? 'one solution' : kind === 'none' ? 'no solution' : 'infinitely many solutions';
   const mRes = mc(rng, label, ['one solution', 'no solution', 'infinitely many solutions', 'two solutions']);
   return {
