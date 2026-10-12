@@ -1,0 +1,28 @@
+# Dependencies & build output
+node_modules/
+dist/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# NCDPI copyrighted released forms — local reference only, never push
+DOCS/released/
+DOCS/eoc/*_released.pdf
+
+# Test screenshots / local artifacts
+*.log
+m6_vis_*.png
+m7_vis_*.png
+m8_vis_*.png
+*_svg_gallery.html
+*_svg_gallery.png
+
+# Misc
+*.zip
+.DS_Store
+
+# EOC working artifacts (page renders, extracted text)
+DOCS/eoc/m*.png
+DOCS/eoc/*_text.txt
