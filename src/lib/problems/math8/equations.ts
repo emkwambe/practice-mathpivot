@@ -27,7 +27,7 @@ export const genSciNotationCompare: ProblemFactory = (rng) => {
   const correct = `${lastCoeff} \\times 10^{${lastExp}}`;
   const m = mcUnique(rng, correct, [
     `${lastCoeff * 10} \\times 10^{${lastExp}}`,
-    `${lastCoeff} \\times 10^{${lastExp + 1}}`,
+    `${lastCoeff} \\times 10^{${lastExp - 1}}`,
     `${Math.max(lastCoeff - 1, 1)} \\times 10^{${lastExp}}`,
   ], (kk) => `${lastCoeff + kk} \\times 10^{${lastExp - 1}}`);
   return {

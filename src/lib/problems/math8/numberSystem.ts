@@ -43,17 +43,22 @@ export const genIrrationalId: ProblemFactory = (rng) => {
 
 // ── Q13-style GR: closest integer to √n ─────────────────────────────────
 export const genSqrtNearestInt: ProblemFactory = (rng) => {
-  const k = randInt(rng, 5, 16);
-  const n = k * k + randInt(rng, Math.ceil(k * 0.6), Math.floor(k * 1.4)); // closer to k than k±1
-  if (n === k * k || n >= (k + 1) * (k + 1) || n <= (k - 0.5) * (k - 0.5)) return genSqrtNearestInt(rng, 'medium');
+  const k = randInt(rng, 5, 16); // lower bracket root
+  // n strictly between k^2 and (k+1)^2; the correct nearest integer is
+  // round(sqrt(n)) — k when n <= k^2+k, k+1 when n >= k^2+k+1
+  // (for integer n, "n closer to (k+1)^2" <=> "sqrt(n) > k+0.5").
+  const n = randInt(rng, k * k + 1, (k + 1) * (k + 1) - 1);
+  const answer = Math.round(Math.sqrt(n));
+  const nearSq = answer * answer;
+  const farSq = answer === k ? (k + 1) * (k + 1) : k * k;
   return {
     itemType: 'GR',
     context: `Which integer is closest to the value of the expression?`,
     question: `\\sqrt{${n}}`,
-    answer: num(k),
+    answer: num(answer),
     steps: [
       { number: 1, description: `Bracket between perfect squares: ${k * k} < ${n} < ${(k + 1) * (k + 1)}.`, math: `${k} < \\sqrt{${n}} < ${k + 1}` },
-      { number: 2, description: `${n} is closer to ${k * k}, so the root is closer to ${k}.`, math: num(k) },
+      { number: 2, description: `${n} is closer to ${nearSq} than to ${farSq}, so the root is closer to ${answer}.`, math: num(answer) },
     ],
     hints: ['Find the perfect squares on either side.'],
     timeEstimate: 60,
