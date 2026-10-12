@@ -1,0 +1,236 @@
+[
+  {
+    "n": 1,
+    "subject": "math3-eoc",
+    "technique": "m3-polynomials",
+    "difficulty": "easy",
+    "itemType": "MC",
+    "answer": "2x^2 - 3x - 3 + \\frac{234}{x + 2}",
+    "choices": [
+      "2x^2 - 2x - 3 + \\frac{234}{x + 2}",
+      "2x^2 - 3x - 1 - \\frac{234}{x + 2}",
+      "2x^2 - 3x - 3 + \\frac{234}{x + 2}",
+      "2x^2 - 3x - 3 + \\frac{257}{x + 2}"
+    ]
+  },
+  {
+    "n": 2,
+    "subject": "math3-eoc",
+    "technique": "m3-polynomials",
+    "difficulty": "medium",
+    "itemType": "MC",
+    "answer": "3x + 6",
+    "choices": [
+      "3x - 6",
+      "3x + 7",
+      "3x + 6",
+      "3x + 5"
+    ]
+  },
+  {
+    "n": 3,
+    "subject": "math3-eoc",
+    "technique": "m3-polynomials",
+    "difficulty": "hard",
+    "itemType": "MC",
+    "answer": "5x - 8 \\text{ is a factor of } f(x)",
+    "choices": [
+      "5x - 8 \\text{ is a factor of } f(x)",
+      "5x + 8 \\text{ is a factor of } f(x)",
+      "5x - 23 \\text{ is a factor of } f(x)",
+      "5x + 23 \\text{ is a factor of } f(x)"
+    ]
+  },
+  {
+    "n": 4,
+    "subject": "math3-eoc",
+    "technique": "m3-rational-expressions",
+    "difficulty": "easy",
+    "itemType": "GR",
+    "answer": "-1.50"
+  },
+  {
+    "n": 5,
+    "subject": "math3-eoc",
+    "technique": "m3-rational-expressions",
+    "difficulty": "medium",
+    "itemType": "MC",
+    "answer": "x = 5",
+    "choices": [
+      "x = 6",
+      "x = -5",
+      "x = -6",
+      "x = 5"
+    ]
+  },
+  {
+    "n": 6,
+    "subject": "math3-eoc",
+    "technique": "m3-rational-expressions",
+    "difficulty": "hard",
+    "itemType": "MC",
+    "answer": "-8",
+    "choices": [
+      "-8",
+      "8",
+      "6",
+      "-8.1"
+    ]
+  },
+  {
+    "n": 7,
+    "subject": "math3-eoc",
+    "technique": "m3-exponential-logs",
+    "difficulty": "easy",
+    "itemType": "MC",
+    "answer": "f(x) = 5(0.75)^x",
+    "choices": [
+      "f(x) = 10(0.75)^x",
+      "f(x) = 5(0.75)^x + 5",
+      "f(x) = 5(0.75)^x",
+      "f(x) = 5(1.333333)^x"
+    ]
+  },
+  {
+    "n": 8,
+    "subject": "math3-eoc",
+    "technique": "m3-exponential-logs",
+    "difficulty": "medium",
+    "itemType": "MC",
+    "answer": "f(x) = 10(0.5)^x",
+    "choices": [
+      "f(x) = 10(0.5)^x",
+      "f(x) = 20(0.5)^x",
+      "f(x) = 10(0.5)^x + 10",
+      "f(x) = 10(2)^x"
+    ]
+  },
+  {
+    "n": 9,
+    "subject": "math3-eoc",
+    "technique": "m3-exponential-logs",
+    "difficulty": "hard",
+    "itemType": "MC",
+    "answer": "The initial value of the investment is $120.",
+    "choices": [
+      "The interest rate on the investment is 45%.",
+      "The initial value of the investment is $5.",
+      "The interest rate on the investment is 120%.",
+      "The initial value of the investment is $120."
+    ]
+  },
+  {
+    "n": 10,
+    "subject": "math3-eoc",
+    "technique": "m3-functions-transformations",
+    "difficulty": "easy",
+    "itemType": "MC",
+    "answer": "D^{-1}(x) = 25x + 235",
+    "choices": [
+      "D^{-1}(x) = \\frac{x + 25}{235}",
+      "D^{-1}(x) = 25x + 235",
+      "D^{-1}(x) = 25x - 235",
+      "D^{-1}(x) = \\frac{x - 25}{235}"
+    ]
+  },
+  {
+    "n": 11,
+    "subject": "math3-eoc",
+    "technique": "m3-functions-transformations",
+    "difficulty": "medium",
+    "itemType": "MC",
+    "answer": "g(x) = \\frac{1}{x + 4} + 4",
+    "choices": [
+      "g(x) = \\frac{1}{x - 4} + 4",
+      "g(x) = \\frac{1}{x + 4} - 4",
+      "g(x) = \\frac{1}{x + 4} + 4",
+      "g(x) = \\frac{1}{x - 4} - 4"
+    ]
+  },
+  {
+    "n": 12,
+    "subject": "math3-eoc",
+    "technique": "m3-functions-transformations",
+    "difficulty": "hard",
+    "itemType": "MC",
+    "answer": "y = |x - 3| - 4",
+    "choices": [
+      "y = |x - 3| + 4",
+      "y = |x + 3| + 4",
+      "y = |x + 3| - 4",
+      "y = |x - 3| - 4"
+    ]
+  },
+  {
+    "n": 13,
+    "subject": "math3-eoc",
+    "technique": "m3-geometry",
+    "difficulty": "easy",
+    "itemType": "GR",
+    "answer": "4"
+  },
+  {
+    "n": 14,
+    "subject": "math3-eoc",
+    "technique": "m3-geometry",
+    "difficulty": "medium",
+    "itemType": "MC",
+    "answer": "68",
+    "choices": [
+      "68",
+      "64 \\text{ units}",
+      "42 \\text{ units}",
+      "46 \\text{ units}"
+    ]
+  },
+  {
+    "n": 15,
+    "subject": "math3-eoc",
+    "technique": "m3-geometry",
+    "difficulty": "hard",
+    "itemType": "GR",
+    "answer": "70"
+  },
+  {
+    "n": 16,
+    "subject": "math3-eoc",
+    "technique": "m3-statistics",
+    "difficulty": "easy",
+    "itemType": "MC",
+    "answer": "surveying a random sample of students from a list of all students",
+    "choices": [
+      "assembling one male and one female student from each grade",
+      "placing suggestion boxes at random locations in the school",
+      "surveying a random sample of students from a list of all students",
+      "inviting all students to respond by text message"
+    ]
+  },
+  {
+    "n": 17,
+    "subject": "math3-eoc",
+    "technique": "m3-statistics",
+    "difficulty": "medium",
+    "itemType": "MC",
+    "answer": "surveying a random sample of students from a list of all students",
+    "choices": [
+      "placing suggestion boxes at random locations in the school",
+      "assembling one male and one female student from each grade",
+      "surveying a random sample of students from a list of all students",
+      "inviting all students to respond by text message"
+    ]
+  },
+  {
+    "n": 18,
+    "subject": "math3-eoc",
+    "technique": "m3-statistics",
+    "difficulty": "hard",
+    "itemType": "MC",
+    "answer": "surveying every third student on an alphabetical list of all students about cafeteria food quality",
+    "choices": [
+      "surveying students who volunteer during lunch about school start times",
+      "surveying only juniors about the favorite after-school activity of all students",
+      "surveying 20 random football players about renovating the football stadium",
+      "surveying every third student on an alphabetical list of all students about cafeteria food quality"
+    ]
+  }
+]

@@ -167,7 +167,7 @@ export const genExpGraphId: ProblemFactory = (rng) => {
   const b = decay ? choice(rng, [0.5, 0.25, 0.75]) : choice(rng, [1.5, 2, 3]);
   const f = (x: number) => A * Math.pow(b, x);
   const yMax = Math.max(A * 1.4, Math.min(f(-3) * 1.2, f(3) * 1.2, 60));
-  const svg = functionPlotSvg(f, { xMin: -3, xMax: 3, yMin: -1, yMax });
+  const svg = functionPlotSvg(f, { xMin: -3, xMax: 3, yMin: -1, yMax, labels: true });
   const bTex = b >= 1 ? num(b) : num(b);
   const correct = `f(x) = ${A === 1 ? '' : A}(${bTex})^x`;
   const m = mc(rng, correct, [

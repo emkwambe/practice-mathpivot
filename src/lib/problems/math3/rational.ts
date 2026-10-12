@@ -176,8 +176,31 @@ export const genSolveLinearRational: ProblemFactory = (rng) => {
   const gTex = `\\frac{${c}}{x ${d > 0 ? '-' : '+'} ${Math.abs(d)}}`;
   const fmt = (v: number) => num(Math.round(v * 10) / 10);
   const correct = fmt(x0);
-  const distractors = [fmt(x1), fmt(-x0), fmt(x0 + (rng() < 0.5 ? 0.1 : -0.1)), fmt(-x1)];
-  if (new Set([correct, ...distractors]).size < 5) return genSolveLinearRational(rng, 'medium');
+  // x1 is a genuinely valid intersection unless it is extraneous (x1 === d);
+  // only offer it as a distractor when it is the excluded-value trap.
+  const x1Extraneous = Math.abs(x1 - d) < 1e-9;
+  const candidates = [
+    ...(x1Extraneous ? [fmt(x1), fmt(-x1)] : []),
+    fmt(-x0),
+    fmt(x0 + 1),
+    fmt(x0 - 2),
+    fmt(x0 + 2),
+    fmt(-x0 + 1),
+    fmt(2 * x0),
+  ];
+  // A distractor must be far (>= 1) from BOTH roots: near-tangent quadratics
+  // make x0 +/- 0.1 numerically indistinguishable when checked by
+  // substitution, and anything near the other valid root is a second answer.
+  const distractors = [
+    ...new Set(
+      candidates.filter((v) => {
+        const val = parseFloat(v);
+        if (v === correct || Math.abs(val - x0) < 0.99) return false;
+        return x1Extraneous || Math.abs(val - x1) > 0.99;
+      }),
+    ),
+  ];
+  if (distractors.length < 3) return genSolveLinearRational(rng, 'medium');
   const m = mc(rng, correct, distractors);
   return {
     itemType: 'MC',

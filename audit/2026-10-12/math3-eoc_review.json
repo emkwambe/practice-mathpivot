@@ -1,0 +1,25 @@
+{
+  "subject": "math3-eoc",
+  "reviewer": "independent-blind-solve",
+  "date": "2026-10-12",
+  "answers": [
+    { "n": 1, "letter": "C", "value": null, "flags": [] },
+    { "n": 2, "letter": "C", "value": null, "flags": [] },
+    { "n": 3, "letter": "A", "value": null, "flags": [] },
+    { "n": 4, "letter": null, "value": "-1.5", "flags": [] },
+    { "n": 5, "letter": "D", "value": null, "flags": [] },
+    { "n": 6, "letter": "C", "value": null, "flags": ["multiple-correct: x = -8 (choice A) and x = 6 (choice C) both satisfy f(x) = g(x); fixed in generator so the second root is never offered unless extraneous"] },
+    { "n": 7, "letter": "A", "value": null, "flags": ["figure-defect: axes unlabeled, curve drawn at auto-fit scale (15.2px/unit) unrelated to the 40px grid; f(0)=10 vs 5 unreadable, A and C indistinguishable from figure alone; fixed by adding axis tick labels"] },
+    { "n": 8, "letter": "A", "value": null, "flags": ["figure-defect: same unlabeled-axis issue; A (a=10) and B (a=20) produce identical drawings up to scale; fixed by adding axis tick labels"] },
+    { "n": 9, "letter": "D", "value": null, "flags": [] },
+    { "n": 10, "letter": "B", "value": null, "flags": [] },
+    { "n": 11, "letter": "C", "value": null, "flags": [] },
+    { "n": 12, "letter": "D", "value": null, "flags": [] },
+    { "n": 13, "letter": null, "value": "4", "flags": [] },
+    { "n": 14, "letter": "A", "value": null, "flags": ["cosmetic-leak: correct choice rendered as bare '68' while distractors carry '\\text{ units}' suffix — formatting hints the key; fixed, all choices now bare"] },
+    { "n": 15, "letter": null, "value": "70", "flags": [] },
+    { "n": 16, "letter": "C", "value": null, "flags": [] },
+    { "n": 17, "letter": "C", "value": null, "flags": [] },
+    { "n": 18, "letter": "D", "value": null, "flags": [] }
+  ]
+}

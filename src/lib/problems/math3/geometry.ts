@@ -63,7 +63,7 @@ const TRIPLES: [number, number, number][] = [[3, 4, 5], [6, 8, 10], [5, 12, 13],
 export const genRhombusPerimeter: ProblemFactory = (rng) => {
   const [p, q, side] = choice(rng, TRIPLES);
   const perim = 4 * side;
-  const m = mc(rng, `${perim}`, [`${2 * (p + q)}`, `${2 * side + p}`, `${perim - 4}`, `${perim + 8}`].map((s) => `${s} \\text{ units}`));
+  const m = mc(rng, `${perim}`, [`${2 * (p + q)}`, `${2 * side + p}`, `${perim - 4}`, `${perim + 8}`]);
   return {
     itemType: 'MC',
     context: `Rhombus MPRT is shown. Point E is where the diagonals intersect. The distance from M to E is ${p} units. The distance from P to E is ${q} units. What is the perimeter of MPRT?`,

@@ -11,6 +11,8 @@ export interface PlotOptions {
   yMax: number;
   /** mark integer dots at these x values (piecewise graph reading) */
   dots?: { x: number; y: number; open?: boolean }[];
+  /** draw numeric tick labels on both axes (needed when absolute values matter) */
+  labels?: boolean;
 }
 
 /** 240x240 coordinate plane with the graph of f drawn as a computed polyline. */
@@ -63,12 +65,35 @@ export function functionPlotSvg(f: (x: number) => number, o: PlotOptions): strin
     )
     .join('');
 
+  // Optional numeric tick labels: integers on x, a nice step on y.
+  let labels = '';
+  if (o.labels) {
+    const tx: string[] = [];
+    const yAxisPx = o.xMin < 0 && o.xMax > 0 ? X(0) : 0;
+    const xAxisPx = o.yMin < 0 && o.yMax > 0 ? Y(0) : S;
+    for (let gx = Math.ceil(o.xMin); gx <= Math.floor(o.xMax); gx++) {
+      if (gx === 0) continue;
+      const lx = X(gx);
+      if (Math.abs(lx - yAxisPx) < 12) continue;
+      tx.push(`<text x="${lx.toFixed(1)}" y="${(xAxisPx + 13).toFixed(1)}" text-anchor="middle" font-size="10" font-family="inherit" fill="currentColor" fill-opacity="0.75">${gx}</text>`);
+    }
+    const ySpan = o.yMax - Math.max(o.yMin, 0);
+    const yStep = [1, 2, 5, 10, 20, 50].find((s) => ySpan / s <= 6) ?? 100;
+    for (let gy = yStep; gy <= Math.floor(o.yMax); gy += yStep) {
+      const ly = Y(gy);
+      if (ly < 10) break;
+      tx.push(`<text x="${(yAxisPx - 5).toFixed(1)}" y="${(ly + 3.5).toFixed(1)}" text-anchor="end" font-size="10" font-family="inherit" fill="currentColor" fill-opacity="0.75">${gy}</text>`);
+    }
+    labels = tx.join('');
+  }
+
   return (
     `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${S} ${S}" width="100%" ` +
     `style="max-width:280px;display:block" role="img" aria-label="function graph">` +
     grid.join('') + axes +
     `<path d="${d}" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>` +
     dots +
+    labels +
     `</svg>`
   );
 }
