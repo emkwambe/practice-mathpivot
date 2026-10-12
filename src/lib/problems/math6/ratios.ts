@@ -137,9 +137,9 @@ export const genPercentOfWhole: ProblemFactory = (rng) => {
   const part = Math.round((pct / 100) * total);
   const actual = Math.round((part / total) * 100);
   const item = choice(rng, [
-    { whole: 'stamps in a collection', part: 'stamps given away' },
-    { whole: 'free throws attempted', part: 'free throws made' },
-    { whole: 'problems on a quiz', part: 'problems answered correctly' },
+    { setup: `A collection has ${total} stamps. ${part} of them were given away.`, ask: 'what percent of the stamps were given away' },
+    { setup: `A player attempted ${total} free throws and made ${part} of them.`, ask: 'what percent of the free throws were made' },
+    { setup: `A quiz had ${total} problems. A student answered ${part} of them correctly.`, ask: 'what percent of the problems were answered correctly' },
   ] as const);
   const m = mcUnique(rng, `${actual}\\%`, [
     `${Math.max(1, actual - randInt(rng, 5, 12))}\\%`,
@@ -148,7 +148,7 @@ export const genPercentOfWhole: ProblemFactory = (rng) => {
   ], (k) => `${Math.min(99, actual + 13 + k)}\\%`);
   return {
     itemType: 'MC',
-    context: `There are ${total} ${item.whole}. The number of ${item.part} is ${part}. To the nearest whole percent, what percent of the ${item.whole} are ${item.part.split(' ').slice(1).join(' ') || item.part}?`,
+    context: `${item.setup} To the nearest whole percent, ${item.ask}?`,
     question: '\\text{percent} = ?',
     answer: m.answer,
     choices: m.choices,
