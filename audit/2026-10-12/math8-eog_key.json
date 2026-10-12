@@ -58,7 +58,7 @@
     "answer": "5 \\times 10^{6}",
     "choices": [
       "50 \\times 10^{6}",
-      "5 \\times 10^{7}",
+      "5 \\times 10^{5}",
       "5 \\times 10^{6}",
       "4 \\times 10^{6}"
     ]
@@ -176,7 +176,7 @@
     "technique": "g8-number-system",
     "difficulty": "medium",
     "itemType": "GR",
-    "answer": "6"
+    "answer": "7"
   },
   {
     "n": 15,
@@ -184,6 +184,6 @@
     "technique": "g8-number-system",
     "difficulty": "hard",
     "itemType": "GR",
-    "answer": "8"
+    "answer": "9"
   }
 ]

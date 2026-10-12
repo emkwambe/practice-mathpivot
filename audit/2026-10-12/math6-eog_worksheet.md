@@ -2,7 +2,7 @@
 
 ## Q1 (Ratios & Percents — easy)
 
-There are 40 stamps in a collection. The number of stamps given away is 22. To the nearest whole percent, what percent of the stamps in a collection are given away?
+A collection has 40 stamps. 22 of them were given away. To the nearest whole percent, what percent of the stamps were given away?
 
 $$\text{percent} = ?$$
 
@@ -24,7 +24,7 @@ $$\text{When } x = 11, \text{ what is the value of } y?$$
 
 ## Q3 (Ratios & Percents — hard)
 
-There are 60 free throws attempted. The number of free throws made is 23. To the nearest whole percent, what percent of the free throws attempted are throws made?
+A player attempted 60 free throws and made 23 of them. To the nearest whole percent, what percent of the free throws were made?
 
 $$\text{percent} = ?$$
 
@@ -54,9 +54,9 @@ $$y = \, ?$$
 
 ## Q6 (Expressions & Equations — hard)
 
-Which graph represents the solution for b ≥ 6?
+Which graph represents the solution for x ≥ 6?
 
-$$b \geq 6$$
+$$x \geq 6$$
 
 *(4 answer choices are figures — open each SVG file)*
 - A: `audit/2026-10-12/math6-eog_q6_choice_A.svg`
@@ -66,14 +66,14 @@ $$b \geq 6$$
 
 ## Q7 (The Number System — easy)
 
-The temperature in City F was 59°F. City G was 4° cooler than City F. City H was 5° cooler than City G. City I was 5° warmer than City H. Which lists the cities in order from coldest to warmest?
+The temperature in City F was 59°F. City G was 4° cooler than City F. City H was 5° cooler than City G. City I was 4° warmer than City H. Which lists the cities in order from coldest to warmest?
 
 $$\text{coldest} \rightarrow \text{warmest}$$
 
-- A. H, G, I, F
-- B. G, H, I, F
-- C. F, I, G, H
-- D. H, I, G, F
+- A. H, I, G, F
+- B. I, H, G, F
+- C. F, G, I, H
+- D. H, G, I, F
 
 ## Q8 (The Number System — medium)
 

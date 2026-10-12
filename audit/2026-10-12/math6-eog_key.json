@@ -69,7 +69,7 @@
     "technique": "g6-expressions-equations",
     "difficulty": "hard",
     "itemType": "MC",
-    "answer": "C",
+    "answer": "B",
     "choices": [
       "A",
       "B",
@@ -84,12 +84,12 @@
     "technique": "g6-number-system",
     "difficulty": "easy",
     "itemType": "MC",
-    "answer": "H, G, I, F",
+    "answer": "H, I, G, F",
     "choices": [
-      "H, G, I, F",
-      "G, H, I, F",
-      "F, I, G, H",
-      "H, I, G, F"
+      "H, I, G, F",
+      "I, H, G, F",
+      "F, G, I, H",
+      "H, G, I, F"
     ]
   },
   {

@@ -1,0 +1,194 @@
+[
+  {
+    "n": 1,
+    "subject": "differential-equations",
+    "technique": "separable",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "5e^x"
+  },
+  {
+    "n": 2,
+    "subject": "differential-equations",
+    "technique": "separable",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "\\frac{1}{2}"
+  },
+  {
+    "n": 3,
+    "subject": "differential-equations",
+    "technique": "separable",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "-\\frac{1}{3}"
+  },
+  {
+    "n": 4,
+    "subject": "differential-equations",
+    "technique": "linear-first-order",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "3e^{-2x}"
+  },
+  {
+    "n": 5,
+    "subject": "differential-equations",
+    "technique": "linear-first-order",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "\\frac{5}{3}"
+  },
+  {
+    "n": 6,
+    "subject": "differential-equations",
+    "technique": "linear-first-order",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "1 + \\frac{2}{e}"
+  },
+  {
+    "n": 7,
+    "subject": "differential-equations",
+    "technique": "homogeneous",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "8"
+  },
+  {
+    "n": 8,
+    "subject": "differential-equations",
+    "technique": "homogeneous",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "12"
+  },
+  {
+    "n": 9,
+    "subject": "differential-equations",
+    "technique": "homogeneous",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "6e^2"
+  },
+  {
+    "n": 10,
+    "subject": "differential-equations",
+    "technique": "exact",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "exact"
+  },
+  {
+    "n": 11,
+    "subject": "differential-equations",
+    "technique": "exact",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "4"
+  },
+  {
+    "n": 12,
+    "subject": "differential-equations",
+    "technique": "exact",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "\\frac{1}{2}"
+  },
+  {
+    "n": 13,
+    "subject": "differential-equations",
+    "technique": "second-order",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "\\cos(x)"
+  },
+  {
+    "n": 14,
+    "subject": "differential-equations",
+    "technique": "second-order",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "2\\sin(2x)"
+  },
+  {
+    "n": 15,
+    "subject": "differential-equations",
+    "technique": "second-order",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "e^{2x}"
+  },
+  {
+    "n": 16,
+    "subject": "differential-equations",
+    "technique": "undetermined-coefficients",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "2"
+  },
+  {
+    "n": 17,
+    "subject": "differential-equations",
+    "technique": "undetermined-coefficients",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "\\frac{3}{2}e^x"
+  },
+  {
+    "n": 18,
+    "subject": "differential-equations",
+    "technique": "undetermined-coefficients",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "2"
+  },
+  {
+    "n": 19,
+    "subject": "differential-equations",
+    "technique": "variation-of-parameters",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "\\frac{e}{4}"
+  },
+  {
+    "n": 20,
+    "subject": "differential-equations",
+    "technique": "variation-of-parameters",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "-e^2"
+  },
+  {
+    "n": 21,
+    "subject": "differential-equations",
+    "technique": "variation-of-parameters",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "-e"
+  },
+  {
+    "n": 22,
+    "subject": "differential-equations",
+    "technique": "laplace",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "\\frac{1}{2}"
+  },
+  {
+    "n": 23,
+    "subject": "differential-equations",
+    "technique": "laplace",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "e^2"
+  },
+  {
+    "n": 24,
+    "subject": "differential-equations",
+    "technique": "laplace",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "\\frac{e^{-\\pi/4}}{2}"
+  }
+]

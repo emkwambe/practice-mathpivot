@@ -175,12 +175,12 @@
     "technique": "g7-statistics",
     "difficulty": "medium",
     "itemType": "MC",
-    "answer": "Class A has a greater interquartile range (8 vs 7)",
+    "answer": "Class A has a greater interquartile range (6 vs 5)",
     "choices": [
+      "Both classes have the same median",
+      "Class A has a greater interquartile range (6 vs 5)",
       "The ranges are equal but the interquartile ranges differ",
-      "Class A has a greater range (14 vs 14) and a greater interquartile range",
-      "Class A has a greater interquartile range (8 vs 7)",
-      "Both classes have the same median"
+      "Class A has a greater range (12 vs 14) and a greater interquartile range"
     ]
   },
   {

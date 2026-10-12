@@ -48,7 +48,7 @@ $$-x + 6 > 9$$
 
 What is the value of the expression when x = 4, y = 2, and z = 2?
 
-$$\frac{4x - 3}{4z - 5}$$
+$$\frac{4x - 3y}{4z - 5}$$
 
 - A. \frac{10}{3}
 - B. \frac{10}{7}
@@ -143,10 +143,10 @@ $$\text{IQR} = Q_3 - Q_1$$
 
 **FIGURE (stem):** `audit/2026-10-12/math7-eog_q14_stem.svg` — open this SVG to see the diagram.
 
-- A. The ranges are equal but the interquartile ranges differ
-- B. Class A has a greater range (14 vs 14) and a greater interquartile range
-- C. Class A has a greater interquartile range (8 vs 7)
-- D. Both classes have the same median
+- A. Both classes have the same median
+- B. Class A has a greater interquartile range (6 vs 5)
+- C. The ranges are equal but the interquartile ranges differ
+- D. Class A has a greater range (12 vs 14) and a greater interquartile range
 
 ## Q15 (Statistics — hard)
 

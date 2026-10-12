@@ -46,7 +46,7 @@ This year a company produced 40 × 10^6 units, which is exactly 8 times the numb
 $$(40 \times 10^{6}) \div 8$$
 
 - A. 50 \times 10^{6}
-- B. 5 \times 10^{7}
+- B. 5 \times 10^{5}
 - C. 5 \times 10^{6}
 - D. 4 \times 10^{6}
 
@@ -144,10 +144,10 @@ $$\text{irrational?}$$
 
 Which integer is closest to the value of the expression?
 
-$$\sqrt{42}$$
+$$\sqrt{43}$$
 
 ## Q15 (Number System — hard)
 
 Which integer is closest to the value of the expression?
 
-$$\sqrt{75}$$
+$$\sqrt{79}$$

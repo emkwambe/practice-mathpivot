@@ -71,12 +71,12 @@
     "technique": "m1-functions",
     "difficulty": "easy",
     "itemType": "MC",
-    "answer": "a_n = 1n",
+    "answer": "a_n = n",
     "choices": [
-      "a_n = 1n",
+      "a_n = n",
       "a_n = n + 1",
-      "a_n = 0n + 0",
-      "a_n = 2n + 0"
+      "a_n = 0",
+      "a_n = 2n"
     ]
   },
   {

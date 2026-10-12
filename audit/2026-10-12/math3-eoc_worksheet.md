@@ -56,10 +56,10 @@ Two functions are shown. For what value of x does f(x) = g(x)?
 
 $$f(x) = x + 4 \qquad g(x) = \frac{40}{x - 2}$$
 
-- A. -8
-- B. 8
-- C. 6
-- D. -8.1
+- A. 8
+- B. -8
+- C. -10
+- D. -7
 
 ## Q7 (Exponentials & Logs — easy)
 
@@ -144,9 +144,9 @@ Rhombus MPRT is shown. Point E is where the diagonals intersect. The distance fr
 $$\text{side} = \sqrt{8^2 + 15^2}$$
 
 - A. 68
-- B. 64 \text{ units}
-- C. 42 \text{ units}
-- D. 46 \text{ units}
+- B. 64
+- C. 42
+- D. 46
 
 ## Q15 (Geometry — hard)
 

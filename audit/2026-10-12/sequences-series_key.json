@@ -1,0 +1,194 @@
+[
+  {
+    "n": 1,
+    "subject": "sequences-series",
+    "technique": "geometric-series",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "\\frac{9}{2}"
+  },
+  {
+    "n": 2,
+    "subject": "sequences-series",
+    "technique": "geometric-series",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "1"
+  },
+  {
+    "n": 3,
+    "subject": "sequences-series",
+    "technique": "geometric-series",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "\\frac{10}{3}"
+  },
+  {
+    "n": 4,
+    "subject": "sequences-series",
+    "technique": "p-series-telescoping",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "divergent"
+  },
+  {
+    "n": 5,
+    "subject": "sequences-series",
+    "technique": "p-series-telescoping",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "1"
+  },
+  {
+    "n": 6,
+    "subject": "sequences-series",
+    "technique": "p-series-telescoping",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "\\frac{5}{6}"
+  },
+  {
+    "n": 7,
+    "subject": "sequences-series",
+    "technique": "divergence-test",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "divergent"
+  },
+  {
+    "n": 8,
+    "subject": "sequences-series",
+    "technique": "divergence-test",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "divergent"
+  },
+  {
+    "n": 9,
+    "subject": "sequences-series",
+    "technique": "divergence-test",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "divergent"
+  },
+  {
+    "n": 10,
+    "subject": "sequences-series",
+    "technique": "ratio-test",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "0"
+  },
+  {
+    "n": 11,
+    "subject": "sequences-series",
+    "technique": "ratio-test",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "convergent"
+  },
+  {
+    "n": 12,
+    "subject": "sequences-series",
+    "technique": "ratio-test",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "divergent"
+  },
+  {
+    "n": 13,
+    "subject": "sequences-series",
+    "technique": "root-test",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "\\frac{1}{2}"
+  },
+  {
+    "n": 14,
+    "subject": "sequences-series",
+    "technique": "root-test",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "divergent"
+  },
+  {
+    "n": 15,
+    "subject": "sequences-series",
+    "technique": "root-test",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "convergent"
+  },
+  {
+    "n": 16,
+    "subject": "sequences-series",
+    "technique": "comparison-tests",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "divergent"
+  },
+  {
+    "n": 17,
+    "subject": "sequences-series",
+    "technique": "comparison-tests",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "convergent"
+  },
+  {
+    "n": 18,
+    "subject": "sequences-series",
+    "technique": "comparison-tests",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "convergent"
+  },
+  {
+    "n": 19,
+    "subject": "sequences-series",
+    "technique": "alternating-series",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "\\frac{\\pi}{4}"
+  },
+  {
+    "n": 20,
+    "subject": "sequences-series",
+    "technique": "alternating-series",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "divergent"
+  },
+  {
+    "n": 21,
+    "subject": "sequences-series",
+    "technique": "alternating-series",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "conditionally convergent"
+  },
+  {
+    "n": 22,
+    "subject": "sequences-series",
+    "technique": "power-series",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "infinity"
+  },
+  {
+    "n": 23,
+    "subject": "sequences-series",
+    "technique": "power-series",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "1"
+  },
+  {
+    "n": 24,
+    "subject": "sequences-series",
+    "technique": "power-series",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "\\frac{1}{24}"
+  }
+]

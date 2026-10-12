@@ -44,7 +44,7 @@ $$\text{goal: profit} \geq 4,800,\ \ \text{capacity: total} \leq 300$$
 
 A system of two equations is shown. How many solutions does the system have?
 
-$$\begin{cases} y = \frac{1}{6}x + 8 \\ 6y = 1x + 45 \end{cases}$$
+$$\begin{cases} y = \frac{1}{6}x + 8 \\ 6y = x + 45 \end{cases}$$
 
 - A. one solution
 - B. infinitely many solutions
@@ -57,10 +57,10 @@ A sequence is defined recursively by a(n+1) = a(n) + 1, with a(1) = 1. Which exp
 
 $$a_{n+1} = a_n + 1, \quad a_1 = 1$$
 
-- A. a_n = 1n
+- A. a_n = n
 - B. a_n = n + 1
-- C. a_n = 0n + 0
-- D. a_n = 2n + 0
+- C. a_n = 0
+- D. a_n = 2n
 
 ## Q8 (Functions — medium)
 
