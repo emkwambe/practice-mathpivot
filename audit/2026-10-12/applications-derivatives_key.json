@@ -1,0 +1,170 @@
+[
+  {
+    "n": 1,
+    "subject": "applications-derivatives",
+    "technique": "optimization",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "18"
+  },
+  {
+    "n": 2,
+    "subject": "applications-derivatives",
+    "technique": "optimization",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "24"
+  },
+  {
+    "n": 3,
+    "subject": "applications-derivatives",
+    "technique": "optimization",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "4"
+  },
+  {
+    "n": 4,
+    "subject": "applications-derivatives",
+    "technique": "related-rates",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "30"
+  },
+  {
+    "n": 5,
+    "subject": "applications-derivatives",
+    "technique": "related-rates",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "-\\frac{3}{4}"
+  },
+  {
+    "n": 6,
+    "subject": "applications-derivatives",
+    "technique": "related-rates",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "120"
+  },
+  {
+    "n": 7,
+    "subject": "applications-derivatives",
+    "technique": "curve-sketching",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "2"
+  },
+  {
+    "n": 8,
+    "subject": "applications-derivatives",
+    "technique": "curve-sketching",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "3"
+  },
+  {
+    "n": 9,
+    "subject": "applications-derivatives",
+    "technique": "curve-sketching",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "1"
+  },
+  {
+    "n": 10,
+    "subject": "applications-derivatives",
+    "technique": "mvt",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "3"
+  },
+  {
+    "n": 11,
+    "subject": "applications-derivatives",
+    "technique": "mvt",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "\\frac{5}{2}"
+  },
+  {
+    "n": 12,
+    "subject": "applications-derivatives",
+    "technique": "mvt",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "e - 1"
+  },
+  {
+    "n": 13,
+    "subject": "applications-derivatives",
+    "technique": "linear-approximation",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "1.2"
+  },
+  {
+    "n": 14,
+    "subject": "applications-derivatives",
+    "technique": "linear-approximation",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "0.1"
+  },
+  {
+    "n": 15,
+    "subject": "applications-derivatives",
+    "technique": "linear-approximation",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "4.96"
+  },
+  {
+    "n": 16,
+    "subject": "applications-derivatives",
+    "technique": "motion",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "4"
+  },
+  {
+    "n": 17,
+    "subject": "applications-derivatives",
+    "technique": "motion",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "22"
+  },
+  {
+    "n": 18,
+    "subject": "applications-derivatives",
+    "technique": "motion",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "144"
+  },
+  {
+    "n": 19,
+    "subject": "applications-derivatives",
+    "technique": "economics",
+    "difficulty": "easy",
+    "itemType": "FR",
+    "answer": "20"
+  },
+  {
+    "n": 20,
+    "subject": "applications-derivatives",
+    "technique": "economics",
+    "difficulty": "medium",
+    "itemType": "FR",
+    "answer": "25"
+  },
+  {
+    "n": 21,
+    "subject": "applications-derivatives",
+    "technique": "economics",
+    "difficulty": "hard",
+    "itemType": "FR",
+    "answer": "40"
+  }
+]

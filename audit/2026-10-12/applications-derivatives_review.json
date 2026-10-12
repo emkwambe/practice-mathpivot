@@ -1,0 +1,28 @@
+{
+  "subject": "applications-derivatives",
+  "reviewer": "independent-blind-solve",
+  "date": "2026-10-12",
+  "answers": [
+    { "n": 1, "letter": null, "value": "18", "flags": ["reviewer-phrasing: I first wrote '18 and 18'; the expected answer is the single value 18"] },
+    { "n": 2, "letter": null, "value": "24", "flags": [] },
+    { "n": 3, "letter": null, "value": "4", "flags": [] },
+    { "n": 4, "letter": null, "value": "30", "flags": [] },
+    { "n": 5, "letter": null, "value": "-3/4", "flags": [] },
+    { "n": 6, "letter": null, "value": "120", "flags": [] },
+    { "n": 7, "letter": null, "value": "2", "flags": [] },
+    { "n": 8, "letter": null, "value": "3", "flags": [] },
+    { "n": 9, "letter": null, "value": "1", "flags": [] },
+    { "n": 10, "letter": null, "value": "3", "flags": [] },
+    { "n": 11, "letter": null, "value": "2.5", "flags": [] },
+    { "n": 12, "letter": null, "value": "e - 1", "flags": [] },
+    { "n": 13, "letter": null, "value": "1.2", "flags": [] },
+    { "n": 14, "letter": null, "value": "0.1", "flags": [] },
+    { "n": 15, "letter": null, "value": "4.96", "flags": [] },
+    { "n": 16, "letter": null, "value": "4", "flags": [] },
+    { "n": 17, "letter": null, "value": "22", "flags": [] },
+    { "n": 18, "letter": null, "value": "144", "flags": [] },
+    { "n": 19, "letter": null, "value": "20", "flags": [] },
+    { "n": 20, "letter": null, "value": "25", "flags": [] },
+    { "n": 21, "letter": null, "value": "40", "flags": [] }
+  ]
+}
