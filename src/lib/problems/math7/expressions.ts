@@ -182,7 +182,19 @@ export const genEvaluateExpression: ProblemFactory = (rng) => {
     z = randInt(rng, 2, 5);
     numerator = a * x - b * y;
     denominator = c * z - d;
-    if (denominator !== 0 && numerator !== 0) break;
+    if (denominator > 0 && numerator !== 0) break;
+  }
+  // Deterministic repair if the retry loop exhausted with a degenerate case.
+  // Keep denominator strictly positive: distractors use denominator + c and
+  // denominator + k, and a zero there would crash frac().
+  if (denominator <= 0) {
+    d = c * z - 2; // c*z >= 4, so d >= 2 and denominator = 2
+    denominator = 2;
+  }
+  if (numerator === 0) {
+    y = 1;
+    numerator = a * x - b * y;
+    if (numerator === 0) { b = 1; numerator = a * x - b * y; }
   }
   const correct = frac(numerator, denominator);
   const m = mcUnique(rng, correct, [
@@ -194,7 +206,7 @@ export const genEvaluateExpression: ProblemFactory = (rng) => {
   return {
     itemType: 'MC',
     context: `What is the value of the expression when x = ${x}, y = ${y}, and z = ${z}?`,
-    question: `\\frac{${linExpr(a, -b)}}{${linExpr(c, -d, 'z')}}`,
+    question: `\\frac{${varTerm(a, 'x')} - ${varTerm(b, 'y')}}{${linExpr(c, -d, 'z')}}`,
     answer: m.answer,
     choices: m.choices,
     steps: [

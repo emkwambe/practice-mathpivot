@@ -1,0 +1,236 @@
+[
+  {
+    "n": 1,
+    "subject": "math7-eog",
+    "technique": "g7-ratios-proportions",
+    "difficulty": "easy",
+    "itemType": "MC",
+    "answer": "e = 6h",
+    "choices": [
+      "e = 6h",
+      "e = 6 + h",
+      "e = 7h",
+      "e = h + 6"
+    ]
+  },
+  {
+    "n": 2,
+    "subject": "math7-eog",
+    "technique": "g7-ratios-proportions",
+    "difficulty": "medium",
+    "itemType": "MC",
+    "answer": "e = 4h",
+    "choices": [
+      "e = 4h",
+      "e = h + 4",
+      "e = 4 + h",
+      "e = 5h"
+    ]
+  },
+  {
+    "n": 3,
+    "subject": "math7-eog",
+    "technique": "g7-ratios-proportions",
+    "difficulty": "hard",
+    "itemType": "MC",
+    "answer": "2",
+    "choices": [
+      "\\frac{8}{3}",
+      "\\frac{1}{2}",
+      "\\frac{2}{3}",
+      "2"
+    ]
+  },
+  {
+    "n": 4,
+    "subject": "math7-eog",
+    "technique": "g7-expressions-equations",
+    "difficulty": "easy",
+    "itemType": "MC",
+    "answer": "x < -3",
+    "choices": [
+      "x < -3",
+      "x > -4",
+      "x > -3",
+      "x < -2"
+    ]
+  },
+  {
+    "n": 5,
+    "subject": "math7-eog",
+    "technique": "g7-expressions-equations",
+    "difficulty": "medium",
+    "itemType": "MC",
+    "answer": "\\frac{10}{3}",
+    "choices": [
+      "\\frac{10}{3}",
+      "\\frac{10}{7}",
+      "\\frac{14}{3}",
+      "\\frac{22}{3}"
+    ]
+  },
+  {
+    "n": 6,
+    "subject": "math7-eog",
+    "technique": "g7-expressions-equations",
+    "difficulty": "hard",
+    "itemType": "MC",
+    "answer": "10x - 3",
+    "choices": [
+      "10x + 21",
+      "18x - 3",
+      "-2x - 21",
+      "10x - 3"
+    ]
+  },
+  {
+    "n": 7,
+    "subject": "math7-eog",
+    "technique": "g7-numbers-operations",
+    "difficulty": "easy",
+    "itemType": "MC",
+    "answer": "40 \\text{ minutes}",
+    "choices": [
+      "40 \\text{ minutes}",
+      "55 \\text{ minutes}",
+      "80 \\text{ minutes}",
+      "25 \\text{ minutes}"
+    ]
+  },
+  {
+    "n": 8,
+    "subject": "math7-eog",
+    "technique": "g7-numbers-operations",
+    "difficulty": "medium",
+    "itemType": "GR",
+    "answer": "25/48"
+  },
+  {
+    "n": 9,
+    "subject": "math7-eog",
+    "technique": "g7-numbers-operations",
+    "difficulty": "hard",
+    "itemType": "GR",
+    "answer": "-3.2"
+  },
+  {
+    "n": 10,
+    "subject": "math7-eog",
+    "technique": "g7-geometry",
+    "difficulty": "easy",
+    "itemType": "MC",
+    "answer": "3, 9, 7",
+    "choices": [
+      "3, 6, 3",
+      "3, 10, 2",
+      "3, 9, 7",
+      "7, 5, 13"
+    ]
+  },
+  {
+    "n": 11,
+    "subject": "math7-eog",
+    "technique": "g7-geometry",
+    "difficulty": "medium",
+    "itemType": "MC",
+    "answer": "236",
+    "choices": [
+      "236",
+      "240",
+      "176",
+      "252"
+    ]
+  },
+  {
+    "n": 12,
+    "subject": "math7-eog",
+    "technique": "g7-geometry",
+    "difficulty": "hard",
+    "itemType": "MC",
+    "answer": "7, 9, 12",
+    "choices": [
+      "6, 4, 12",
+      "4, 5, 9",
+      "7, 9, 12",
+      "12, 3, 3"
+    ]
+  },
+  {
+    "n": 13,
+    "subject": "math7-eog",
+    "technique": "g7-statistics",
+    "difficulty": "easy",
+    "itemType": "MC",
+    "answer": "Team A has a greater mean (6.8 vs 6.4), and the medians are equal",
+    "choices": [
+      "Team A has a greater mean (6.8 vs 6.4), and the medians are equal",
+      "Team B has a greater mean, and Team A has a greater median",
+      "The means are equal, and Team A has a greater median",
+      "Team A has a greater mean and a greater median"
+    ]
+  },
+  {
+    "n": 14,
+    "subject": "math7-eog",
+    "technique": "g7-statistics",
+    "difficulty": "medium",
+    "itemType": "MC",
+    "answer": "Class A has a greater interquartile range (8 vs 7)",
+    "choices": [
+      "The ranges are equal but the interquartile ranges differ",
+      "Class A has a greater range (14 vs 14) and a greater interquartile range",
+      "Class A has a greater interquartile range (8 vs 7)",
+      "Both classes have the same median"
+    ]
+  },
+  {
+    "n": 15,
+    "subject": "math7-eog",
+    "technique": "g7-statistics",
+    "difficulty": "hard",
+    "itemType": "MC",
+    "answer": "Survey a random sample of students from all of a middle school",
+    "choices": [
+      "Survey every student who arrives first on Monday",
+      "Survey only the students in one small group at a middle school",
+      "Survey a random sample of students from all of a middle school",
+      "Survey students who volunteer to answer"
+    ]
+  },
+  {
+    "n": 16,
+    "subject": "math7-eog",
+    "technique": "g7-probability",
+    "difficulty": "easy",
+    "itemType": "MC",
+    "answer": "1/8",
+    "choices": [
+      "3/16",
+      "1/4",
+      "1/8",
+      "1/16"
+    ]
+  },
+  {
+    "n": 17,
+    "subject": "math7-eog",
+    "technique": "g7-probability",
+    "difficulty": "medium",
+    "itemType": "GR",
+    "answer": "2/3"
+  },
+  {
+    "n": 18,
+    "subject": "math7-eog",
+    "technique": "g7-probability",
+    "difficulty": "hard",
+    "itemType": "MC",
+    "answer": "60",
+    "choices": [
+      "63",
+      "19",
+      "60",
+      "12"
+    ]
+  }
+]

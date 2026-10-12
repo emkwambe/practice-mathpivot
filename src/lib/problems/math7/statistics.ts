@@ -70,8 +70,20 @@ export const genBoxPlotCompare: ProblemFactory = (rng) => {
     const max = q3 + randInt(rng, 2, 6);
     return { label: '', min, q1, med, q3, max };
   };
-  const a = mk();
-  const b = mk();
+  // Regenerate until every fixed distractor is genuinely false:
+  //  - medians differ ("same median" distractor)
+  //  - ranges differ AND IQRs differ with OPPOSITE signs, so neither
+  //    "ranges equal but IQRs differ" nor "A greater range AND greater IQR"
+  //    can accidentally be true alongside the keyed answer.
+  let a = mk();
+  let b = mk();
+  for (let tries = 0; tries < 60; tries++) {
+    const dRange = a.max - a.min - (b.max - b.min);
+    const dIqr = a.q3 - a.q1 - (b.q3 - b.q1);
+    if (a.med !== b.med && dRange !== 0 && dIqr !== 0 && dRange * dIqr < 0) break;
+    a = mk();
+    b = mk();
+  }
   a.label = 'Class A';
   b.label = 'Class B';
   const iqrA = a.q3 - a.q1;
