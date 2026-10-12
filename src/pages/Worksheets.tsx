@@ -1,4 +1,4 @@
-import { useState, useCallback, useRef } from 'react'
+import { useState, useCallback, useRef, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Printer, FileText, Check, Settings, RotateCcw } from 'lucide-react'
 import { generateProblem, getTechniquesForSubject } from '@/lib/problemGenerator'
@@ -19,6 +19,11 @@ export default function Worksheets() {
   const [worksheetProblems, setWorksheetProblems] = useState<Problem[]>([])
   const [generated, setGenerated] = useState(false)
   const printRef = useRef<HTMLDivElement>(null)
+
+  // Keep the PDF title/filename in sync with the selected course
+  useEffect(() => {
+    document.title = `MathPivot — ${SUBJECT_NAMES[subject]} Practice Worksheet`
+  }, [subject])
 
   const allTechniques = getTechniquesForSubject(subject)
   const mixedKey = MIXED_TECHNIQUE[subject]

@@ -18,6 +18,7 @@ m7_vis_*.png
 m8_vis_*.png
 *_svg_gallery.html
 *_svg_gallery.png
+debug/
 
 # Misc
 *.zip

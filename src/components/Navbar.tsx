@@ -25,7 +25,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 w-full h-[72px] border-b border-[#1F1F1F] bg-[rgba(5,5,5,0.85)] backdrop-blur-[12px]">
+      <nav className="print:hidden sticky top-0 z-50 w-full h-[72px] border-b border-[#1F1F1F] bg-[rgba(5,5,5,0.85)] backdrop-blur-[12px]">
         <div className="container-mathgen h-full flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-1.5 shrink-0">
